@@ -1,0 +1,30 @@
+/* File drop area styling */
+.file-drop-area {
+  border: 2px dashed #3c8bc7; /* Calming blue dashed border */
+  border-radius: 5px; /* Slightly rounded corners */
+  position: relative;
+  max-width: 100%;
+  margin-top: 10px; /* Increased margin for better separation */
+  padding: 20px; /* Even padding */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* File input styling */
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* File message styling */
+.file-msg {
+  display: inline-block;
+  margin-left: 10px; /* Increased spacing from the file icon */
+  font-size: 14px; /* Slightly increased font size for better readability */
+  font-weight: 500;
+  color: #333; /* Dark gray text for better contrast */
+}

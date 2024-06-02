@@ -1,0 +1,117 @@
+/* Example box */
+.example-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  color: #222; /* Adjusted text color for better readability */
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.example-box:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Example boundary */
+.example-boundary {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  border: dotted 2px #ccc; /* Adjusted border style for better visibility */
+}
+
+/* Example container */
+.example-container2 {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Example list */
+.example-list, .example-list2 {
+  border: 1px solid #ccc;
+  min-height: 60px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+
+/* Example box small */
+.example-box-small, .example-box2 {
+  padding: 20px 10px;
+  border-bottom: 1px solid #ccc;
+  color: #222; /* Adjusted text color for better readability */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: #fff;
+  font-size: 14px;
+}
+
+.example-box-small:last-child, .example-box2:last-child {
+  border: none;
+}
+
+/* Drag preview */
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Drag placeholder */
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+/* Drag animating */
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Custom placeholder */
+.example-custom-placeholder {
+  background: #ccc;
+  border: 3px dotted #999;
+  min-height: 60px;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Drag disabled */
+.example-box-small.cdk-drag-disabled {
+  background: #ccc;
+  cursor: default;
+}
+
+/* Example handle */
+.example-handle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ccc;
+  cursor: move;
+  width: 24px;
+  height: 24px;
+}

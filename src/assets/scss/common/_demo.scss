@@ -1,0 +1,265 @@
+/* Buttons */
+.demo-button-sizes .btn {
+  margin-bottom: 5px;
+}
+
+.icon-button-demo button,
+.icon-and-text-button-demo button {
+  margin-right: 5px;
+  margin-bottom: 12px;
+}
+
+.button-demo ul {
+  padding-left: 0;
+}
+
+.button-demo ul li {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.button-demo .btn {
+  display: block;
+  min-width: 175px;
+  margin-right: 8px;
+  margin-bottom: 13px;
+}
+
+.demo-button-groups .btn-group {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.demo-button-toolbar .btn-toolbar {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.demo-button-toolbar .btn-toolbar .btn-group {
+  margin-left: 5px;
+}
+
+.demo-button-nesting > .btn-group {
+  margin-right: 15px;
+}
+
+.demo-single-button-dropdowns > .btn-group,
+.demo-splite-button-dropdowns > .btn-group {
+  margin-right: 10px;
+}
+
+.demo-dropup .dropup {
+  margin-right: 10px;
+}
+
+/* Checkbox & Radio */
+.demo-checkbox label,
+.demo-radio-button label {
+  min-width: 150px;
+}
+
+/* JQuery Knob-Chart */
+.demo-knob-chart div {
+  margin-right: 15px;
+}
+
+/* Switch */
+.demo-switch .switch {
+  display: inline-block;
+  min-width: 170px;
+}
+
+.demo-switch .demo-switch-title {
+  min-width: 95px;
+  display: inline-block;
+}
+
+/* Color Box */
+.demo-color-box {
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.demo-color-box .color-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.demo-color-box .color-code,
+.demo-color-box .color-class-name {
+  font-size: 13px;
+}
+
+/* Images */
+.demo-image-copyright {
+  text-align: right;
+  font-style: italic;
+  font-size: 12px;
+  color: #777;
+  margin: 5px 0 10px 0;
+}
+
+.demo-image-copyright a {
+  font-weight: bold;
+  color: #555 !important;
+}
+
+/* Tags Input */
+.demo-tagsinput-area {
+  margin-bottom: 0 !important;
+}
+
+.demo-tagsinput-area.form-group .form-line:after {
+  border-bottom: 0;
+}
+
+/* Google Material Design Icon */
+.demo-icon-container .demo-google-material-icon {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.demo-icon-container .demo-google-material-icon .icon-name {
+  position: relative;
+  top: -8px;
+  left: 7px;
+}
+
+.demo-icon-container .demo-google-material-icon .material-icons {
+  width: 24px;
+}
+
+/* Preloaders */
+.demo-preloader .preloader {
+  margin-right: 10px;
+}
+
+/* Ion Range Slider */
+.irs-demo {
+  margin-bottom: 40px;
+}
+
+.irs-demo .irs {
+  margin-top: 15px;
+}
+
+/* Right Sidebar */
+.right-sidebar .nav-tabs + .tab-content {
+  padding: 0;
+}
+
+.right-sidebar p {
+  margin: 20px 15px 15px 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.right-sidebar #settings .setting-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.right-sidebar #settings .setting-list li {
+  padding: 15px;
+  position: relative;
+  border-top: 1px solid #eee;
+}
+
+.right-sidebar #settings .setting-list li .switch {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+.right-sidebar .progress {
+  border-radius: 50px;
+  height: 7px;
+  margin: 10px 0;
+}
+
+.right-sidebar .choose-theme li {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.demo-choose-skin,
+.demo-choose-logoheader {
+  list-style: none;
+  padding-left: 0;
+  overflow-y: hidden;
+}
+
+.demo-choose-skin li,
+.demo-choose-logoheader li {
+  padding: 10px 7px 4px 0;
+  position: relative;
+  cursor: pointer;
+  float: left;
+}
+
+.demo-choose-skin li.actived:after,
+.demo-choose-logoheader li.actived:after {
+  font-family: "Material Icons";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "\E876";
+  font-size: 18px;
+  color: #ece6e6;
+}
+
+.demo-choose-skin li div,
+.demo-choose-logoheader li div {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.demo-choose-skin li span,
+.demo-choose-logoheader li span {
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+}
+
+.demo-choose-skin .white-theme,
+.demo-choose-logoheader .white-theme {
+  background-color: #fff;
+}
+
+.demo-choose-skin .black-theme,
+.demo-choose-logoheader .black-theme {
+  background-color: #2f3c6b;
+}
+
+.demo-choose-skin .purple-theme,
+.demo-choose-logoheader .purple-theme {
+  background-color: #813ae1;
+}
+
+.demo-choose-skin .blue-theme,
+.demo-choose-logoheader .blue-theme {
+  background-color: #03a9f3;
+}
+
+.demo-choose-skin .cyan-theme,
+.demo-choose-logoheader .cyan-theme {
+  background-color: #13d1d3;
+}
+
+.demo-choose-skin .green-theme,
+.demo-choose-logoheader .green-theme {
+  background-color: #13b464;
+}
+
+.demo-choose-skin .orange-theme,
+.demo-choose-logoheader .orange-theme {
+  background-color: #f06533;
+}

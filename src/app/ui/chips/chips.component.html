@@ -1,0 +1,98 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Jetons'" [items]="['UI']" [active_item]="'Jetons'"></app-breadcrumb>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+          <div class="header">
+            <h2>Jetons de base</h2>
+          </div>
+          <div class="body">
+            <mat-chip-listbox aria-label="Sélection de poissons">
+              <mat-chip-option>Un poisson</mat-chip-option>
+              <mat-chip-option>Deux poissons</mat-chip-option>
+              <mat-chip-option color="accent" selected>Poisson d'accent</mat-chip-option>
+              <mat-chip-option color="warn">Poisson d'avertissement</mat-chip-option>
+            </mat-chip-listbox>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+          <div class="header">
+            <h2>Jetons d'autocomplétion</h2>
+          </div>
+          <div class="body">
+            <form>
+              <mat-form-field class="example-chip-list" appearance="fill">
+                <mat-label>Fruits préférés</mat-label>
+                <mat-chip-grid #chipGrid aria-label="Sélection de fruits">
+                  <mat-chip-row *ngFor="let fruit of fruits" (removed)="remove(fruit)">
+                    {{fruit}}
+                    <button matChipRemove [attr.aria-label]="'supprimer ' + fruit">
+                      <mat-icon>cancel</mat-icon>
+                    </button>
+                  </mat-chip-row>
+                </mat-chip-grid>
+                <input placeholder="Nouveau fruit..." #fruitInput [formControl]="fruitCtrl" [matChipInputFor]="chipGrid"
+                  [matAutocomplete]="auto" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                  (matChipInputTokenEnd)="add($event)" />
+                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                  <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
+                    {{fruit}}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+          <div class="header">
+            <h2>Jetons avatar</h2>
+          </div>
+          <div class="body">
+            <mat-chip-listbox aria-label="Sélection de chiens">
+              <mat-chip>
+                <img matChipAvatar src="../../../assets/images/user/user1.jpg" alt="Image utilisateur" />
+                Chien un
+              </mat-chip>
+              <mat-chip color="primary">
+                <img matChipAvatar src="../../../assets/images/user/user3.jpg" alt="Image utilisateur" />
+                Chien deux
+              </mat-chip>
+              <mat-chip color="accent">
+                <img matChipAvatar src="../../../assets/images/user/user2.jpg" alt="Image utilisateur" />
+                Chien trois
+              </mat-chip>
+            </mat-chip-listbox>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+        <div class="card">
+          <div class="header">
+            <h2>Jetons empilés</h2>
+          </div>
+          <div class="body">
+            <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Sélection de couleur">
+              <mat-chip-option *ngFor="let chip of availableColors" selected [color]="chip.color">
+                {{chip.name}}
+              </mat-chip-option>
+            </mat-chip-listbox>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

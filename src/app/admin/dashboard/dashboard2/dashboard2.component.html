@@ -1,0 +1,356 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Tableau de Bord 2'" [items]="[]" [active_item]="'Tableau de Bord 2'"></app-breadcrumb>
+    </div>
+    <div class="row clearfix">
+      <!-- Bar chart with line -->
+      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Performance du Médecin</h2>
+          </div>
+          <div class="body">
+            <div class="recent-report__chart">
+              <apx-chart [series]="lineChartOptions.series!" [chart]="lineChartOptions.chart!"
+                [xaxis]="lineChartOptions.xaxis!" [stroke]="lineChartOptions.stroke!"
+                [colors]="lineChartOptions.colors!" [dataLabels]="lineChartOptions.dataLabels!"
+                [legend]="lineChartOptions.legend!" [tooltip]="lineChartOptions.tooltip!"
+                [markers]="lineChartOptions.markers!" [grid]="lineChartOptions.grid!" [yaxis]="lineChartOptions.yaxis!"
+                [title]="lineChartOptions.title!" [fill]="lineChartOptions.fill!">
+              </apx-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- line chart -->
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+        <div class="plain-card">
+          <div class="card-inner">
+            <h6 class="tx-primary m-b-10">Rapport des Patients</h6>
+            <div class="row">
+              <div class="col-4">
+                <label class="font-14">Aujourd'hui</label>
+                <p>105</p>
+              </div>
+              <div class="col-4">
+                <label class="font-14">Cette Semaine</label>
+                <p>825</p>
+              </div>
+              <div class="col-4">
+                <label class="font-14">Ce Mois</label>
+                <p>22,067</p>
+              </div>
+            </div>
+            <div class="progress shadow-style">
+              <div class="progress-bar l-bg-orange width-per-74" role="progressbar" aria-valuenow="74" aria-valuemin="0"
+                aria-valuemax="100">74%</div>
+            </div>
+          </div>
+        </div>
+        <div class="plain-card">
+          <div class="card-inner">
+            <h6 class="tx-primary m-b-10">Rapport de Revenus</h6>
+            <div class="row">
+              <div class="col-4">
+                <label class="font-14">Aujourd'hui</label>
+                <p>1,247 TND</p>
+              </div>
+              <div class="col-4">
+                <label class="font-14">Cette Semaine</label>
+                <p>22,568 TND</p>
+              </div>
+              <div class="col-4">
+                <label class="font-14">Ce Mois</label>
+                <p>65,147 TND</p>
+              </div>
+            </div>
+            <div class="progress shadow-style">
+              <div class="progress-bar l-bg-red width-per-70" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="plain-card">
+          <div class="card-inner">
+            <h6 class="tx-primary m-b-10">Rapport de Dépenses</h6>
+            <div class="row">
+              <div class="col-4">
+                <label class="font-14">Aujourd'hui</label>
+                <p>723 TND</p>
+              </div>
+              <div class="col-4">
+                <label class="font-14">Cette Semaine</label>
+                <p>12,451 TND</p>
+              </div>
+              <div class="col-4">
+                <label class="font-14">Ce Mois</label>
+                <p>35,589 TND</p>
+              </div>
+            </div>
+            <div class="progress shadow-style">
+              <div class="progress-bar l-bg-cyan width-per-55" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                aria-valuemax="100">55%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+          <div class="header">
+            <h2>Rapport Récent</h2>
+            <button mat-icon-button [matMenuTriggerFor]="menu" class="header-dropdown">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>add_circle_outline</mat-icon>
+                <span>Ajouter</span>
+              </button>
+              <button mat-menu-item disabled>
+                <mat-icon>delete_outline</mat-icon>
+                <span>Supprimer</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>refresh</mat-icon>
+                <span>Rafraîchir</span>
+              </button>
+            </mat-menu>
+          </div>
+          <div class="body">
+            <div class="row">
+              <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-center">
+                <div class="ml-xl-3 m-b-20">
+                  <h2 class="fw-bold banner-big-font">1,17,289 TND</h2>
+                  <h4 class="fw-bold banner-big-font2 col-green">Revenu Total</h4>
+                  <p class="mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor.
+                  </p>
+                </div>
+                <div class="ml-xl-3">
+                  <h2 class="fw-bold banner-big-font">1,17,289 TND</h2>
+                  <h4 class="fw-bold banner-big-font2 col-orange">Dépense Totale</h4>
+                  <p class="mb-2">Cras dapibus. Vivamus elementum semper nisi. Aenean
+                    vulputate eleifend tellus.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-8">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5 class="tx-primary m-b-30">Patients par Pays</h5>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Tunis</div>
+                      </div>
+                      <div class="status">
+                        <span>40</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-warning width-per-40" role="progressbar"
+                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">40%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Bizerte</div>
+                      </div>
+                      <div class="status">
+                        <span>49</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-danger width-per-49" role="progressbar" aria-valuenow="49"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">49%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Sousse</div>
+                      </div>
+                      <div class="status">
+                        <span>65</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-blue width-per-65" role="progressbar" aria-valuenow="65"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">65%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Beja</div>
+                      </div>
+                      <div class="status">
+                        <span>28</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-success width-per-28" role="progressbar"
+                          aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">28%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Gafsa</div>
+                      </div>
+                      <div class="status">
+                        <span>33</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar l-bg-purple width-per-33" role="progressbar" aria-valuenow="33"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">33%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="tx-primary m-b-30">Revenus par Pays</h5>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Tunis</div>
+                      </div>
+                      <div class="status">
+                        <span>40</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-warning width-per-40" role="progressbar"
+                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">40%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Bizerte</div>
+                      </div>
+                      <div class="status">
+                        <span>49</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-danger width-per-49" role="progressbar" aria-valuenow="49"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">49%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Sousse</div>
+                      </div>
+                      <div class="status">
+                        <span>65</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-blue width-per-65" role="progressbar" aria-valuenow="65"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">65%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Beja</div>
+                      </div>
+                      <div class="status">
+                        <span>28</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar progress-bar-success width-per-28" role="progressbar"
+                          aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">28%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress-list m-b-10">
+                      <div class="details">
+                        <div class="title">Gafsa</div>
+                      </div>
+                      <div class="status">
+                        <span>33</span>% </div>
+                      <div class="progress-xs not-rounded progress">
+                        <div class="progress-bar l-bg-purple width-per-33" role="progressbar" aria-valuenow="33"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">33%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 m-b-30">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="analytics-circle-circle analytics-circle-warning">
+                          <span>72%</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <h6 class="text-uppercase mb-4">Rapport des Patients</h6>
+                        <h4 class="fw-bold">1,206</h4>
+                        <span>Patient Total</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                          commodo ligula eget dolor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 m-b-30">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="analytics-circle-circle analytics-circle-success">
+                          <span>47%</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <h6 class="text-uppercase mb-4">Rapport de Réunion</h6>
+                        <h4 class="fw-bold">234</h4>
+                        <span>Total Réunion</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                          commodo ligula eget dolor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="analytics-circle-circle analytics-circle-primary">
+                          <span>55%</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <h6 class="text-uppercase mb-4">Rapport de Traitement</h6>
+                        <h4 class="fw-bold">8,453</h4>
+                        <span>Total Traitement</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                          commodo ligula eget dolor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="analytics-circle-circle analytics-circle-danger">
+                          <span>42%</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <h6 class="text-uppercase mb-4">Rapport de Récupération</h6>
+                        <h4 class="fw-bold">5,982</h4>
+                        <span>Total Récupération</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                          commodo ligula eget dolor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-outline-primary mt-4"><i class="fa fa-redo m-r-5"></i> refresh</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

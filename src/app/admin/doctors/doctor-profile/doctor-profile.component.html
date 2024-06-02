@@ -1,0 +1,290 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Profil'" [items]="['Médecins']" [active_item]="'Profil'"></app-breadcrumb>
+    </div>
+    <!-- Your content goes here  -->
+    <div class="row clearfix">
+      <div class="col-lg-4 col-md-12">
+        <div class="card">
+          <div class="m-b-20">
+            <div class="contact-grid">
+              <div class="profile-header bg-dark">
+                <div class="user-name">Dr. John Smith</div>
+                <div class="name-center">Médecin senior</div>
+              </div>
+              <img src="assets/images/user/usrbig3.jpg" class="user-img" alt="">
+              <p class="user-center" style="color: #96a2b4;">
+                456, Avenue Estern, Quartier de la courtage,
+                <br />New York
+              </p>
+              <div>
+                <span class="phone" style="color: #96a2b4;">
+                  <i class="material-icons" style="color: #96a2b4;">phone</i>264-625-2583</span>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <h5 style="color: #96a2b4;">564</h5>
+                  <small style="color: #96a2b4;">Abonnements</small>
+                </div>
+                <div class="col-4">
+                  <h5 style="color: #96a2b4;">18k</h5>
+                  <small style="color: #96a2b4;">Abonnés</small>
+                </div>
+                <div class="col-4">
+                  <h5 style="color: #96a2b4;">565</h5>
+                  <small style="color: #96a2b4;">Publications</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="À propos">
+              <div class="p-4">
+                <p style="color: #96a2b4;">Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
+                <small class="text-muted">Adresse e-mail: </small>
+                <p style="color: #96a2b4;">john@gmail.com</p>
+                <hr>
+                <small class="text-muted">Téléphone: </small>
+                <p style="color: #96a2b4;">+126 1234567890</p>
+                <hr>
+              </div>
+            </mat-tab>
+            <mat-tab label="Compétences">
+              <ul class="list-unstyled p-4">
+                <li>
+                  <div>Consultation externe (OPD)</div>
+                  <div class="progress skill-progress m-b-20">
+                    <div class="progress-bar l-bg-green width-per-45" role="progressbar" aria-valuenow="45"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+                <li>
+                  <div>Opérations</div>
+                  <div class="progress skill-progress m-b-20">
+                    <div class="progress-bar l-bg-orange width-per-38" role="progressbar" aria-valuenow="38"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+                <li>
+                  <div>Visite de patients</div>
+                  <div class="progress skill-progress m-b-20">
+                    <div class="progress-bar l-bg-cyan width-per-39" role="progressbar" aria-valuenow="39"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+                <li>
+                  <div>R&D</div>
+                  <div class="progress skill-progress m-b-20">
+                    <div class="progress-bar l-bg-purple width-per-70" role="progressbar" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+              </ul>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <div class="card">
+          <mat-tab-group>
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon msr-2">face</mat-icon>
+                À propos de moi
+              </ng-template>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="project_widget">
+                  <div class="header">
+                    <h2><strong>À propos</strong></h2>
+                  </div>
+                  <div class="body">
+                    <div class="row">
+                      <div class="col-md-3 col-6 b-r">
+                        <strong>Nom complet</strong>
+                        <br>
+                        <p class="text-muted">Emily Smith</p>
+                      </div>
+                      <div class="col-md-3 col-6 b-r">
+                        <strong>Téléphone mobile</strong>
+                        <br>
+                        <p class="text-muted">(126) 456 7890</p>
+                      </div>
+                      <div class="col-md-3 col-6 b-r">
+                        <strong>Email</strong>
+                        <br>
+                        <p class="text-muted">johndeo@example.com</p>
+                      </div>
+                      <div class="col-md-3 col-6">
+                        <strong>Emplacement</strong>
+                        <br>
+                        <p class="text-muted">Beja</p>
+                      </div>
+                    </div>
+                    <p class="m-t-30">J'ai terminé mes études en arts à l'institution bien connue et renommée de Beja - SARDAR PATEL ARTS COLLEGE, BARODA en 2000-01, qui était affiliée à l'université M.S. J'ai été classé dans les examens universitaires de la même université de 1996-01.</p>
+                    <p>J'ai travaillé en tant que professeur et chef de département au collège Sarda, Rajkot, Gujarat de 2003 à 2015.</p>
+                    <p>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, quand un imprimeur inconnu a pris une galère de type et l'a brouillée pour en faire un livre de spécimens de type. Il a survécu non seulement à cinq siècles, mais aussi au saut dans la composition électronique, restant essentiellement inchangé.</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="project_widget">
+                  <div class="header">
+                    <h2><strong>Éducation</strong></h2>
+                  </div>
+                  <div class="body">
+                    <ul>
+                      <li>M.B.B.S., Université de Gujarat, Ahmedabad, Beja.</li>
+                      <li>M.S., Université de Gujarat, Ahmedabad, Beja.</li>
+                      <li>STAGE SPINAL Dr. John Adam, Allegimeines Krakenhaus, Schwerin, Bizerte.</li>
+                      <li>Fellowship en chirurgie rachidienne endoscopique Phoenix, Tunis.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="project_widget">
+                  <div class="header">
+                    <h2><strong>Expérience</strong></h2>
+                  </div>
+                  <div class="body">
+                    <ul>
+                      <li>Stage d'internat d'un an d'avril 2009 à mars 2010 au B. J. Medical College, Ahmedabad.</li>
+                      <li>Résidence de trois ans à l'hôpital général V.S. en tant que résident en orthopédie d'avril 2008 à avril 2011.</li>
+                      <li>J'ai travaillé comme physiothérapeute à temps partiel à l'Apang Manav Mandal du 1er juin 2004 au 31 janvier 2005.</li>
+                      <li>Fellowship clinique et de recherche en scoliose à l'université Shaurashtra et au centre médical (KUMC), Krishna Hospital, Rajkot d'avril 2013 à juin 2013.</li>
+                      <li>2,5 ans travaillé à l'hôpital général Mahatma Gandhi, Surendranagar.</li>
+                      <li>Chirurgien orthopédiste consultant Jalna 2 ans.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="project_widget">
+                  <div class="header">
+                    <h2><strong>Conférences, cours et ateliers suivis</strong></h2>
+                  </div>
+                  <div class="body">
+                    <ul>
+                      <li>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique.</li>
+                      <li>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique.</li>
+                      <li>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique.</li>
+                      <li>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique.</li>
+                      <li>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique.</li>
+                      <li>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique.</li>
+                      <li>Lorem Ipsum est simplement du faux texte de l'imprimerie et de la composition typographique.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </mat-tab>
+
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon msr-2">settings</mat-icon>
+                Paramètres
+              </ng-template>
+              <div class="header">
+                <h2>
+                  <strong>Sécurité</strong> Paramètres</h2>
+              </div>
+              <div class="body">
+                <div class="example-container">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nom d'utilisateur</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Mot de passe actuel</mat-label>
+                    <input matInput type="password">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nouveau mot de passe</mat-label>
+                    <input matInput type="password">
+                  </mat-form-field>
+                </div>
+                <button mat-raised-button color="primary">Enregistrer</button>
+              </div>
+              <div class="header">
+                <h2>
+                  <strong>Compte</strong> Paramètres</h2>
+              </div>
+              <div class="body">
+                <div class="row clearfix">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Prénom</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom de famille</mat-label>
+                        <input matInput>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <div class="form-group">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                          <mat-label>Ville</mat-label>
+                          <input matInput>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <div class="form-group">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                          <mat-label>Email</mat-label>
+                          <input matInput>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <div class="form-group">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                          <mat-label>Pays</mat-label>
+                          <input matInput>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                          <mat-label>Adresse</mat-label>
+                          <textarea matInput></textarea>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <mat-checkbox class="example-margin">Visibilité du profil pour tout le monde</mat-checkbox>
+                      </div>
+                      <div class="form-group">
+                        <mat-checkbox class="example-margin">Notifications de nouvelles tâches</mat-checkbox>
+                      </div>
+                      <div class="form-group">
+                        <mat-checkbox class="example-margin">Notifications de nouvelles demandes d'ami</mat-checkbox>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <button mat-raised-button color="primary">Enregistrer les modifications</button>
+                    </div>
+                  </div>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+

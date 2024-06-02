@@ -1,0 +1,142 @@
+/* Contact detail section */
+.contact-detail {
+  .fa {
+    float: left;
+    width: 30px;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #434651; /* Updated color for better readability */
+  }
+  span {
+    float: left;
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+    color: #434651; /* Updated color for better readability */
+  }
+  .fa-envelope {
+    font-size: 15px;
+  }
+  .fa-mobile {
+    font-size: 25px;
+  }
+}
+
+/* Contact photo section */
+.contact-photo {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-photo img {
+  margin: 0 auto;
+  width: 130px;
+  padding: 3px;
+  border: 3px solid #d2d6de; /* Updated color for better readability */
+  border-radius: 50%;
+}
+
+/* Contact user title */
+.contact-usertitle {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.contact-usertitle-name {
+  font-size: 20px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #3a405b; /* Updated color for better readability */
+}
+
+.contact-usertitle-job {
+  color: #777777; /* Updated color for better readability */
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* New label button */
+.newLabelBtn {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Close button in alert */
+.alert-dismissible .close {
+  text-indent: 0;
+}
+
+/* Dismissible alert */
+.alert.alert-dismissible {
+  color: #ffffff;
+}
+
+/* Contact list */
+.contact_list .phone {
+  position: relative;
+  padding-left: 20px;
+}
+
+.contact_list .phone .material-icons {
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  top: 1px;
+}
+
+/* Remove border from list group items */
+.list-group-unbordered .list-group-item {
+  border: 0;
+}
+
+/* Contact header */
+.contact-header {
+  display: flex;
+}
+
+.contact-details-img img {
+  position: relative;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 0px;
+  overflow: hidden;
+}
+
+/* Contact details name */
+.contact-details-name {
+  font-size: 25px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Contact details field */
+.contact-details-field {
+  display: flex;
+  margin-top: 30px;
+}
+
+.contact-details-field .material-icons-two-tone {
+  margin: 0 20px 0 10px;
+}
+
+.contact-details-field .contact-detail-info {
+  white-space: pre-wrap;
+}
+
+/* Color icon */
+.contact-details-field .color-icon {
+  filter: invert(14%) sepia(0%) saturate(5141%) hue-rotate(101deg)
+    brightness(95%) contrast(97%);
+}
+
+/* Contact form */
+.contact-form .modalHeader img {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}

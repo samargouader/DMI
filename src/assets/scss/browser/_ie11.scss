@@ -1,0 +1,56 @@
+﻿html {
+  &.ie11 {
+    .sidebar {
+      .menu {
+        .list {
+          .ml-menu {
+            li {
+              &.active {
+                a {
+                  &:not(.menu-toggle) {
+                    &.toggled {
+                      &:before {
+                        top: 10px !important; /* Adjusted position for the active menu item */
+                        line-height: 26px !important; /* Adjusted line height for the active menu item */
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .user-info {
+        .info-container {
+          top: 20px; /* Adjusted position for the user info container */
+        }
+      }
+    }
+
+    .search-bar {
+      input[type="text"] {
+        padding: 16px 56px; /* Adjusted padding for the search input */
+      }
+    }
+
+    .dropdown-menu {
+      ul {
+        &.menu {
+          li {
+            a {
+              margin-top: -18px; /* Adjusted margin for the dropdown menu items */
+            }
+          }
+        }
+      }
+    }
+
+    .bs-searchbox {
+      .form-control {
+        width: 88%; /* Adjusted width for the search box input */
+      }
+    }
+  }
+}

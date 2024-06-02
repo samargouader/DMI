@@ -1,0 +1,80 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Demande des Examens'" [items]="['Demandes']" [active_item]="'Examen Biologique'">
+      </app-breadcrumb>
+    </div>
+    <!-- Basic Validation -->
+    <div class="row clearfix">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Demande <strong>d'Examen Biologique</strong></h2>
+          </div>
+          <div class="body">
+            <form class="register-form m-4" [formGroup]="register" (ngSubmit)="onRegister()">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Nom</mat-label>
+                    <input matInput formControlName="first" required>
+                    <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>face</mat-icon>
+                    <mat-error *ngIf="register.get('first')?.hasError('required')">
+                      Le nom est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Prénom</mat-label>
+                    <input matInput formControlName="last" required>
+                    <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>face</mat-icon>
+                    <mat-error *ngIf="register.get('last')?.hasError('required')">
+                      Le prénom est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Nom du Médecin</mat-label>
+                    <input matInput formControlName="doctorname" required>
+                    <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>face</mat-icon>
+                    <mat-error *ngIf="register.get('doctorname')?.hasError('required')">
+                      Le nom du médecin est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <section class="example-section">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                    <mat-checkbox formControlName="nfs">NFS</mat-checkbox>
+                    <mat-checkbox formControlName="crp">CRP</mat-checkbox>
+                    <mat-checkbox formControlName="iono">Iono</mat-checkbox>
+                    <mat-checkbox formControlName="uree">Urée</mat-checkbox>
+                    <mat-checkbox formControlName="creatinine">Créatinine</mat-checkbox>
+                    <mat-checkbox formControlName="glycemie">Glycémie</mat-checkbox>
+                    <mat-checkbox formControlName="hymoglobineGlyquee">Hymoglobine Glyquée</mat-checkbox>
+                  </div>
+                </section>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Autres</mat-label>
+                    <input matInput formControlName="autres">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <button class="btn-space" mat-raised-button color="primary" type="submit" [disabled]="!register.valid">Envoyer</button>
+                  <button type="button" mat-raised-button color="warn">Annuler</button>
+                </div>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #END# Basic Validation -->
+  </div>
+</section>

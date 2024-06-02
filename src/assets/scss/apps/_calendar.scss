@@ -1,0 +1,103 @@
+/* Adjusted font size for better readability */
+#event_title {
+  font-size: 1.4rem;
+}
+
+/* Increased width and removed float for better responsiveness */
+#calendar {
+  width: 100%;
+  margin: 0 auto; /* Center align */
+}
+
+/* Improved contrast and increased padding for better touch usability */
+#external-events .fc-event {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: move;
+}
+
+/* Adjusted font size and increased border-radius for better touch usability */
+.cal-event {
+  display: inline-block !important;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* Changed active state background color for better visibility */
+.fc-state-active {
+  background: #5e8dd9 !important;
+  color: #fff;
+}
+
+/* Adjusted font size and padding for better touch usability */
+.fc-button {
+  font-size: 14px !important;
+  padding: 10px 20px !important;
+}
+
+/* Adjusted colors for better readability and aesthetics */
+.fc-event-primary {
+  background-color: #1f9bff !important;
+  color: #fff;
+}
+
+.fc-event-warning {
+  background-color: #ff6f00 !important;
+  color: #fff;
+}
+
+.fc-event-success {
+  background-color: #4caf50 !important;
+  color: #fff;
+}
+
+.fc-event-danger {
+  background-color: #f44336 !important;
+  color: #fff;
+}
+
+.fc-event-info {
+  background-color: #00bcd4 !important;
+  color: #fff;
+}
+
+/* Changed default background color for better contrast */
+.fc-state-default {
+  background-color: #fff !important;
+  color: #333;
+}
+
+/* Adjusted font size for better readability */
+.fc-toolbar h2 {
+  font-size: 18px;
+}
+
+/* Changed font color for better readability */
+.fc-view,
+.fc-view > table th,
+.fc-view > table td {
+  color: #333 !important;
+}
+
+/* Adjusted font size and increased padding for better readability */
+.fc-basic-view .fc-day-number,
+.fc-basic-view .fc-week-number {
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* Improved contrast and readability for today's date */
+.fc-day-today .fc-daygrid-day-number {
+  background: #5e8dd9;
+  color: #fff;
+}
+
+/* Improved contrast and readability for the header cells */
+.fc-col-header-cell-cushion {
+  color: #333;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+  <h3 mat-dialog-title>Êtes-vous sûr ?</h3> 
+  <div mat-dialog-content>
+    <ul class="clearfix">
+      <li>
+        <p><span class="font-weight-bold">Nom du patient :</span>{{data.patient_name}}</p>
+      </li>
+      <li>
+        <p><span class="font-weight-bold">Sexe :</span>{{data.gender}}</p>
+      </li>
+      <li>
+        <p>
+          <span class="font-weight-bold">Nom du conducteur :</span>{{data.driver_name}}
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div mat-dialog-actions class="mb-1">
+    <button mat-flat-button color="warn" [mat-dialog-close]="1" (click)="confirmDelete()">
+      Supprimer
+    </button>
+    <button mat-flat-button (click)="onNoClick()" tabindex="-1">Annuler</button>
+  </div>
+</div>

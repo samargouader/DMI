@@ -1,0 +1,492 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Fiche'" [items]="['Fiche de Consultation Accident de Plongée']"></app-breadcrumb>
+    </div>
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="body">
+            <div class="example-container">
+              <div class="row">
+                <div class="header">
+                  <h2>Informations sur le Patient</h2>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nom</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Prénom</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Age</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-4">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Adresse</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Tél</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Profession</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="example-container">
+              <div class="row">
+                <div class="header">
+                  <h2>Informations sur l'Accident de Plongée</h2>
+                </div>
+                <div class="row">
+                  <div class="col-2">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>N⁰ Accident Plongée</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-3">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Adressé par</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-2">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Date</mat-label>
+                      <span matPrefix>
+                        <mat-icon class="m-2">date_range</mat-icon>
+                      </span>
+                      <input matInput placeholder="EX: 10/07/20 11:05:29 " mask="00/00/00 00:00:00" />
+                    </mat-form-field>
+                  </div>
+                  <div class="col-2">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Heure d'appel</mat-label>
+                      <span matPrefix>
+                        <mat-icon class="m-2">access_time</mat-icon>
+                      </span>
+                      <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                    </mat-form-field>
+                  </div>
+                  <div class="col-3">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Moyen d'évacuation</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Médecin Traitant</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Tél</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Club de Plongée</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-4">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Responsable</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Tél</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Motif d'admission</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+              <div class="row">
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Heure 1er Symptômes</mat-label>
+                    <span matPrefix>
+                      <mat-icon class="m-2">access_time</mat-icon>
+                    </span>
+                    <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Heure 1er Soins</mat-label>
+                    <span matPrefix>
+                      <mat-icon class="m-2">access_time</mat-icon>
+                    </span>
+                    <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Oxygène</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Aspirine</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Hydrataion</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Autre</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="example-container">
+              <div class="row">
+                <div class="header">
+                  <h2>Paramètres de la plongée</h2>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Lieu</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Heure d'immersion</mat-label>
+                    <span matPrefix>
+                      <mat-icon class="m-2">access_time</mat-icon>
+                    </span>
+                    <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Profondeur Max</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-4">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Durée Travail Fond</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Paliers</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Heure Sortie Eau</mat-label>
+                    <span matPrefix>
+                      <mat-icon class="m-2">access_time</mat-icon>
+                    </span>
+                    <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Durée Totale Plongée</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Ordinateur</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>MN 90</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-label>Remontée Conforme</mat-label>
+                  <section class="example-section">
+                    <mat-radio-group [(ngModel)]="selectedOption">
+                      <mat-radio-button class="example-margin" value="oui">Oui</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="non">Non</mat-radio-button>
+                    </mat-radio-group>
+                  </section>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Air</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Mélange</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Circuit Ouvert</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Fermé</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-6">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Conditions Environnementales</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="example-container">
+              <div class="row">
+                <div class="header">
+                  <h2>Paramètres de la plongée précédente</h2>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Heure d'immersion</mat-label>
+                    <span matPrefix>
+                      <mat-icon class="m-2">access_time</mat-icon>
+                    </span>
+                    <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Profondeur Max</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-4">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Durée Travail Fond</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Paliers</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Heure Sortie Eau</mat-label>
+                    <span matPrefix>
+                      <mat-icon class="m-2">access_time</mat-icon>
+                    </span>
+                    <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Durée Totale Plongée</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nbre Plongée/6 Mois</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Niveau/Date</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>ATCD Plongée</mat-label>
+                  <textarea matInput></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Facteurs Favorisants</mat-label>
+                  <textarea matInput></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="example-container">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Antécedants</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Traitement Habituel</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Examens Clinique</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="example-container">
+              <div class="row">
+                <div class="header">
+                  <h2>Examens Complémentaires: </h2>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Radiographique du Thorax</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>ECG</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-8">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>FOP</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Bilan Thrombophilie</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>TDM</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label> IRM</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Autres</mat-label>
+                  <textarea matInput></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="example-container">
+              <div class="row">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Conclusion</mat-label>
+                  <textarea matInput></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Traitement OHB</mat-label>
+                  <textarea matInput></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+            <div class="card">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <button class="btn-space" mat-raised-button color="primary">Soumettre</button>
+                  <button type="button" mat-raised-button color="warn">Annuler</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>

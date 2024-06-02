@@ -1,0 +1,184 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Onglets'" [items]="['UI']" [active_item]="'Onglets'"></app-breadcrumb>
+    </div>
+    <!-- Example Tab -->
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Exemples d'Onglets de Base</h2>
+
+          </div>
+          <div class="body">
+            <mat-tab-group>
+              <mat-tab label="Premier">
+                <br>
+                <b>Contenu Accueil</b>
+                <p>
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </mat-tab>
+              <mat-tab label="Deuxième">
+                <br>
+                <b>Contenu Profil</b>
+                <p>
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </mat-tab>
+              <mat-tab label="Troisième">
+                <br>
+                <b>Contenu Message</b>
+                <p>
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Onglet Avec Icônes</h2>
+
+          </div>
+          <div class="body">
+            <mat-tab-group>
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  <mat-icon class="example-tab-icon msr-2">thumb_up</mat-icon>
+                  Premier
+                </ng-template>
+                <br>
+                <b>Contenu Accueil</b>
+                <p>
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </mat-tab>
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  <mat-icon class="example-tab-icon msr-2">thumb_up</mat-icon>
+                  Deuxième
+                </ng-template>
+                <br>
+                <b>Contenu Profil</b>
+                <p>
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </mat-tab>
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  <mat-icon class="example-tab-icon msr-2">thumb_up</mat-icon>
+                  Troisième
+                </ng-template>
+                <br>
+                <b>Contenu Message</b>
+                <p>
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Groupe d'Onglets avec Hauteur Dynamique Basée sur le Contenu des Onglets</h2>
+
+          </div>
+          <div class="body">
+            <mat-tab-group dynamicHeight>
+              <mat-tab label="Onglet Court">
+                <div class="example-small-box mat-elevation-z4">
+                  Petit contenu
+                </div>
+              </mat-tab>
+              <mat-tab label="Onglet Long">
+                <div class="example-large-box mat-elevation-z4">
+                  Grand contenu
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Groupe d'Onglets avec Changement Dynamique des Onglets</h2>
+
+          </div>
+          <div class="body">
+            <mat-form-field>
+              <mat-label>Indice d'Onglet Sélectionné</mat-label>
+              <input matInput type="number" [formControl]="selected">
+            </mat-form-field>
+            <div class="mb-3">
+              <button mat-raised-button class="example-add-tab-button msr-2"
+                (click)="addTab(selectAfterAdding.checked)">
+                Ajouter un nouvel onglet
+              </button>
+              <mat-checkbox #selectAfterAdding> Sélectionner l'onglet après l'ajout </mat-checkbox>
+            </div>
+            <mat-tab-group [selectedIndex]="selected.value" (selectedIndexChange)="selected.setValue($event)">
+              <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+                <br>
+                Contenu pour l'onglet {{tab}}
+                <button mat-raised-button class="example-delete-tab-button" [disabled]="tabs.length === 1"
+                  (click)="removeTab(index)">
+                  Supprimer l'Onglet
+                </button>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

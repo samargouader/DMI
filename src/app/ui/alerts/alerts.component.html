@@ -1,0 +1,71 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- fil d'ariane -->
+      <app-breadcrumb [title]="'Alertes'" [items]="['UI']" [active_item]="'Alertes'"></app-breadcrumb>
+    </div>
+    <!-- Alertes basiques -->
+    <div class="row clearfix">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Basique</strong> Alerte</h2>
+
+          </div>
+          <div class="body">
+            <div class="alert alert-success">
+              <strong>Bien joué !</strong> Vous avez réussi à lire ce message d'alerte important.
+            </div>
+            <div class="alert alert-info">
+              <strong>Attention !</strong> Cette alerte nécessite votre attention, mais elle n'est pas super importante.
+            </div>
+            <div class="alert alert-warning">
+              <strong>Attention !</strong> Mieux vaut vérifier vous-même, vous ne semblez pas très bien.
+            </div>
+            <div class="alert alert-danger">
+              <strong>Oh zut !</strong> Changez quelques éléments et essayez de soumettre à nouveau.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #FIN# Alertes basiques -->
+    <!-- Liens dans les alertes -->
+    <div class="row clearfix">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Liens</strong> dans l'alerte</h2>
+
+          </div>
+          <div class="body">
+            <div class="alert alert-success">
+              <strong>Bien joué !</strong> Vous avez réussi à lire ce
+              <a href="#" onClick="return false;" class="alert-link">message d'alerte important</a>.
+            </div>
+            <div class="alert alert-info">
+              <strong>Attention !</strong> Cette
+              <a href="#" onClick="return false;" class="alert-link">alerte nécessite votre attention</a>, mais ce n'est pas très important.
+            </div>
+            <div class="alert alert-warning">
+              <strong>Attention !</strong> Mieux vaut vérifier vous-même, vous ne semblez
+              <a href="#" onClick="return false;" class="alert-link">pas très bien</a>.
+            </div>
+            <div class="alert alert-danger">
+              <strong>Oh zut !</strong>
+              <a href="#" onClick="return false;" class="alert-link">Changez quelques éléments</a> et essayez de soumettre à nouveau.
+            </div>
+            <div class="alert bg-pink">
+              Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo
+              esse dolorum id
+              <a href="#" onClick="return false;" class="alert-link">lien d'alerte</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #FIN# Liens dans les alertes -->
+  </div>
+</section>

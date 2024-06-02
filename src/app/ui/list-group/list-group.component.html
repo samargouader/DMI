@@ -1,0 +1,306 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Groupes de liste'" [items]="['UI']" [active_item]="'Groupes de liste'"></app-breadcrumb>
+    </div>
+    <div class="row clearfix">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Liste de base</h2>
+
+          </div>
+          <div class="body">
+            <mat-list role="list">
+              <mat-list-item role="listitem">Élément 1</mat-list-item>
+              <mat-list-item role="listitem">Élément 2</mat-list-item>
+              <mat-list-item role="listitem">Élément 3</mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Liste avec sélection</h2>
+
+          </div>
+          <div class="body">
+            <mat-selection-list #shoes>
+              <mat-list-option *ngFor="let shoe of typesOfShoes">
+                {{shoe}}
+              </mat-list-option>
+            </mat-selection-list>
+            <p>
+              Options sélectionnées : {{shoes.selectedOptions.selected.length}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <!-- Exemples de base -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Exemples</strong> de base</h2>
+
+          </div>
+          <div class="body">
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Exemples de base -->
+      <!-- Badges -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Insignes</strong>
+            </h2>
+
+          </div>
+          <div class="body">
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio
+                <span class="badge bg-pink">14 nouveaux</span>
+              </li>
+              <li class="list-group-item">Dapibus ac facilisis in
+                <span class="badge bg-cyan">99 lus</span>
+              </li>
+              <li class="list-group-item">Morbi leo risus
+                <span class="badge bg-teal">99+</span>
+              </li>
+              <li class="list-group-item">Porta ac consectetur ac
+                <span class="badge bg-orange">21</span>
+              </li>
+              <li class="list-group-item">Vestibulum at eros
+                <span class="badge bg-purple">18</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Badges -->
+    </div>
+    <div class="row clearfix">
+      <!-- Éléments liés -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Liés</strong> Éléments</h2>
+
+          </div>
+          <div class="body">
+            <div class="list-group">
+              <a href="#" onClick="return false;" class="list-group-item active">
+                Cras justo odio
+              </a>
+              <a href="#" onClick="return false;" class="list-group-item">Dapibus ac facilisis in</a>
+              <a href="#" onClick="return false;" class="list-group-item">Morbi leo risus</a>
+              <a href="#" onClick="return false;" class="list-group-item">Porta ac consectetur ac</a>
+              <a href="#" onClick="return false;" class="list-group-item">Vestibulum at eros</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Éléments liés -->
+      <!-- Éléments de bouton -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Bouton</strong> Éléments</h2>
+
+          </div>
+          <div class="body">
+            <div class="list-group">
+              <button type="button" class="list-group-item">Cras justo odio</button>
+              <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+              <button type="button" class="list-group-item">Morbi leo risus</button>
+              <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+              <button type="button" class="list-group-item">Vestibulum at eros</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Éléments de bouton -->
+    </div>
+    <!-- Éléments désactivés -->
+    <div class="row clearfix">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Désactivé</strong> Éléments</h2>
+
+          </div>
+          <div class="body">
+            <div class="list-group">
+              <a href="#" onClick="return false;" class="list-group-item disabled">
+                Cras justo odio
+              </a>
+              <a href="#" onClick="return false;" class="list-group-item">Dapibus ac facilisis in</a>
+              <a href="#" onClick="return false;" class="list-group-item">Morbi leo risus</a>
+              <a href="#" onClick="return false;" class="list-group-item">Porta ac consectetur ac</a>
+              <a href="#" onClick="return false;" class="list-group-item">Vestibulum at eros</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #FIN# Éléments désactivés -->
+    <div class="row clearfix">
+      <!-- Classes contextuelles -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Classes</strong> contextuelles</h2>
+
+          </div>
+          <div class="body">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+              <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+              <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+              <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Classes contextuelles -->
+      <!-- Classes contextuelles avec éléments liés -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Classes</strong> contextuelles avec éléments liés</h2>
+
+          </div>
+          <div class="body">
+            <div class="list-group">
+              <a href="#" onClick="return false;" class="list-group-item list-group-item-success">Dapibus
+                ac facilisis in</a>
+              <a href="#" onClick="return false;" class="list-group-item list-group-item-info">Cras sit
+                amet nibh libero</a>
+              <a href="#" onClick="return false;" class="list-group-item list-group-item-warning">Porta ac
+                consectetur ac</a>
+              <a href="#" onClick="return false;" class="list-group-item list-group-item-danger">Vestibulum
+                at eros</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Classes contextuelles avec éléments liés -->
+    </div>
+    <div class="row clearfix">
+      <!-- Éléments colorés avec couleurs de design matériel -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Éléments</strong> colorés avec couleurs de design matériel</h2>
+
+          </div>
+          <div class="body">
+            <ul class="list-group">
+              <li class="list-group-item list-group-bg-pink">Dapibus ac facilisis in</li>
+              <li class="list-group-item list-group-bg-cyan">Cras sit amet nibh libero</li>
+              <li class="list-group-item list-group-bg-teal">Porta ac consectetur ac</li>
+              <li class="list-group-item list-group-bg-orange">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Éléments colorés avec couleurs de design matériel -->
+      <!-- Contenu personnalisé -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Personnalisé</strong> Contenu</h2>
+
+          </div>
+          <div class="body">
+            <div class="list-group">
+              <a href="#" onClick="return false;" class="list-group-item list-group-bg-pink">Dapibus ac
+                facilisis in</a>
+              <a href="#" onClick="return false;" class="list-group-item list-group-bg-cyan">Cras sit amet
+                nibh libero</a>
+              <a href="#" onClick="return false;" class="list-group-item list-group-bg-teal">Porta ac
+                consectetur ac</a>
+              <a href="#" onClick="return false;" class="list-group-item list-group-bg-orange">Vestibulum
+                at eros</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #FIN# Contenu personnalisé -->
+    </div>
+    <!-- Classes contextuelles avec éléments liés -->
+    <div class="row clearfix">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Classes</strong> contextuelles avec éléments liés</h2>
+
+          </div>
+          <div class="body">
+            <div class="list-group">
+              <a href="#" onClick="return false;" class="list-group-item active">
+                <h4 class="list-group-item-heading">En-tête d'élément de groupe de liste</h4>
+                <p class="list-group-item-text">
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </a>
+              <a href="#" onClick="return false;" class="list-group-item">
+                <h4 class="list-group-item-heading">En-tête d'élément de groupe de liste</h4>
+                <p class="list-group-item-text">
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                  gubergren
+                  sadipscing mel.
+                </p>
+              </a>
+              <a href="#" onClick="return false;" class="list-group-item">
+                <h4 class="list-group-item-heading">En-tête d'élément de groupe de liste</h4>
+                <p class="list-group-item-text">
+                  Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit
+                  mediocritatem an. Pri ut tation electram moderatius.
+                  Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                  aliquid
+                  pro.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #FIN# Classes contextuelles avec éléments liés -->
+  </div>
+</section>
+

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "001",
+    "vehicle_no": "TN88KW7845",
+    "vehicle_name": "Toyota Innova",
+    "year_made": "2009",
+    "driver_name": "Ali Ben Amara",
+    "driver_license_no": "TN6456345645",
+    "driver_no": "2164567890",
+    "vehicle_type": "Contractual",
+    "node": ""
+  },
+  {
+    "id": "002",
+    "vehicle_no": "TN88PO6743",
+    "vehicle_name": "Force Traveller",
+    "year_made": "2021",
+    "driver_name": "Jamel Aloui",
+    "driver_license_no": "TN5643463465",
+    "driver_no": "2164567890",
+    "vehicle_type": "Owned",
+    "node": ""
+  },
+  {
+    "id": "003",
+    "vehicle_no": "TN54XS2345",
+    "vehicle_name": "Tata Winger",
+    "year_made": "2000",
+    "driver_name": "Aziz Ben Youssef",
+    "driver_license_no": "TN645645654",
+    "driver_no": "2164567890",
+    "vehicle_type": "Owned",
+    "node": ""
+  },
+  {
+    "id": "004",
+    "vehicle_no": "TN54XS8743",
+    "vehicle_name": "Maruti Suzuki Omni",
+    "year_made": "2018",
+    "driver_name": "Kamel Haddad",
+    "driver_license_no": "TN6456456545",
+    "driver_no": "2164567890",
+    "vehicle_type": "Contractual",
+    "node": ""
+  }
+]

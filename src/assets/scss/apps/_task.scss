@@ -1,0 +1,254 @@
+/* Mirror */
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+/* Hidden */
+.gu-hide {
+  display: none !important;
+}
+
+/* Unselectable */
+.gu-unselectable {
+  user-select: none !important;
+}
+
+/* Transition */
+.gu-transit {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+/* Taskbar */
+.taskbar {
+  .checked {
+    border: 3px solid #007bff !important; /* Blue border for checked items */
+  }
+
+  .box {
+    padding-bottom: 7px;
+
+    .task-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #007bff; /* Blue for task names */
+    }
+
+    .task-desc {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .task-deadline {
+      margin-top: 5px;
+      margin-right: 5px;
+      font-size: 0.8em;
+      color: #555;
+    }
+  }
+
+  .done div.box {
+    pointer-events: none;
+
+    .tasks {
+      color: #fff !important; /* White text for completed tasks */
+    }
+  }
+
+  .avatar-image {
+    display: inline-block;
+    position: relative;
+  }
+
+  .task-header {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    color: #6b6a6a;
+  }
+
+  .card-footer {
+    background: #fff !important;
+    border-radius: 0px 0px 10px 10px;
+
+    .progress {
+      height: 5px;
+    }
+  }
+}
+
+/* Padding */
+.pad {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+}
+
+/* Move */
+.move {
+  text-align: center;
+  background: #f8f9fa; /* Light gray background for move section */
+
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+/* Task Module */
+.task-module {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  min-height: 100%;
+
+  .mat-drawer.mat-drawer-end {
+    width: 500px;
+    min-width: 500px;
+    border: 1px solid #dcd6d6;
+  }
+
+  .task-header {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    margin: 10px 0px 23px 0px;
+  }
+
+  .header-button {
+    margin-left: auto;
+  }
+}
+
+/* Task Container */
+.task-container {
+  .header {
+    .header-title {
+      margin: 0px 0px 0px 5px;
+    }
+
+    .header-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      list-style: none;
+    }
+  }
+}
+
+/* Task List */
+.task-list {
+  width: 100%;
+  max-width: 100%;
+  border: solid 1px #ccc;
+  min-height: 60px;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Task User Image */
+.task-user-img {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+/* Task Date */
+.task-date {
+  margin-left: 30px;
+}
+
+/* Labels */
+.lbl-low, .lbl-high, .lbl-normal {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+/* Task Priority Colors */
+.task-low {
+  color: #28a745; /* Green for low priority */
+}
+
+.task-high {
+  color: #dc3545; /* Red for high priority */
+}
+
+.task-normal {
+  color: #6c757d; /* Gray for normal priority */
+}
+
+/* Task Box */
+.task-box {
+  padding: 10px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* Drag Preview */
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Drag Animation */
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Last Child */
+.task-box:last-child {
+  border: none;
+}
+
+/* Custom Placeholder */
+.task-list.cdk-drop-list-dragging .task-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.task-custom-placeholder {
+  background: #ccc;
+  border: dotted 3px #999;
+  min-height: 60px;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Task Handle */
+.task-handle {
+  color: #ccc;
+  cursor: move;
+  width: 24px;
+  height: 24px;
+}
+
+/* Done Tasks */
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Material List Item Content */
+.mat-list-item-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

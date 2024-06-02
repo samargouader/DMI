@@ -1,0 +1,101 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Ajouter Département'" [items]="['Départements']" [active_item]="'Ajouter Département'">
+      </app-breadcrumb>
+    </div>
+    <div class="row clearfix">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2><strong> Ajouter Département</strong></h2>
+          </div>
+          <div class="body">
+            <form class="m-4" [formGroup]="departForm" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Numéro de Département</mat-label>
+                    <input matInput formControlName="d_no" type="number" required>
+                    <mat-error *ngIf="departForm.get('d_no')?.hasError('required')">
+                      Numéro de Département est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Nom du Département</mat-label>
+                    <input matInput formControlName="d_name" required>
+                    <mat-error *ngIf="departForm.get('d_name')?.hasError('required')">
+                      Nom du Département est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Date du Département</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="d_date" required>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error *ngIf="departForm.get('d_date')?.hasError('required')">
+                      Veuillez sélectionner une date
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Chef du Département</mat-label>
+                    <input matInput formControlName="d_head" required>
+                    <mat-error *ngIf="departForm.get('d_head')?.hasError('required')">
+                      Chef du Département est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Statut</mat-label>
+                    <mat-select formControlName="status" required>
+                      <mat-option [value]="'Active'">
+                        Actif
+                      </mat-option>
+                      <mat-option [value]="'Inactive'">
+                        Inactif
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="departForm.get('status')?.hasError('required')">
+                      Statut est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Description</mat-label>
+                    <textarea matInput formControlName="description"></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <button class="btn-space" [disabled]="!departForm.valid " mat-raised-button
+                    color="primary">Soumettre</button>
+                  <button type="button" mat-raised-button color="warn">Annuler</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

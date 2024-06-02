@@ -1,0 +1,174 @@
+.feedBody {
+  border-left: 2px solid #007bff; /* Changed border color to blue for better visibility */
+  margin-left: 30px;
+  padding-top: 15px; /* Increased padding for better spacing */
+  padding-left: 15px; /* Adjusted padding for better alignment */
+}
+
+.col-auto {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.feedLblStyle {
+  font-weight: bold;
+  padding: 0px 10px; /* Increased padding for better spacing */
+  border-radius: 15px; /* Rounded corners for better appearance */
+}
+
+.lblFileStyle {
+  color: red;
+  border: 1px solid red;
+}
+
+.lblTaskStyle {
+  color: #28a745; /* Changed color to green for a positive indicator */
+  border: 1px solid #28a745;
+}
+
+.lblCommentStyle {
+  color: #007bff; /* Changed color to blue for better visibility */
+  border: 1px solid #007bff;
+}
+
+.lblReplyStyle {
+  color: #dc3545; /* Changed color to red for emphasis */
+  border: 1px solid #dc3545;
+}
+
+.feedBody li {
+  position: relative;
+  padding-left: 60px; /* Adjusted padding for better alignment with user image */
+  margin-bottom: 30px; /* Increased margin for better separation between items */
+}
+
+.feedBody li .feed-user-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.feedBody li .feed-user-img img {
+  width: 50px; /* Increased image size for better visibility */
+  height: 50px;
+  border-radius: 50%;
+}
+
+.feedBody li.active-feed .feed-user-img:after {
+  border-color: #28a745; /* Changed color to green for active indicator */
+}
+
+.feedBody li .feed-user-img:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+
+.feedBody li h6 {
+  line-height: 1.6; /* Increased line height for better readability */
+  cursor: pointer;
+}
+
+.text-muted {
+  color: #6c757d !important; /* Adjusted muted text color for better readability */
+  margin-bottom: 15px; /* Increased margin for better separation */
+}
+
+.img-100 {
+  width: 100px;
+}
+
+.sl-item {
+  border-left: 2px solid #007bff; /* Changed border color to blue for better visibility */
+  padding-bottom: 15px; /* Increased padding for better spacing */
+  padding-left: 30px; /* Adjusted padding for better alignment */
+  position: relative;
+
+  &:last-child::after {
+    border-radius: 50%; /* Rounded indicator for last child */
+    bottom: 0;
+    content: "";
+    height: 8px;
+    left: -5px;
+    position: absolute;
+    width: 8px;
+  }
+
+  .sl-content {
+    i {
+      font-size: 14px; /* Increased icon size for better visibility */
+    }
+
+    small {
+      position: relative;
+      top: -2px; /* Adjusted position for better alignment */
+    }
+
+    p {
+      padding-bottom: 8px; /* Increased padding for better spacing */
+      position: relative;
+    }
+  }
+}
+
+.sl-item::before {
+  background-color: #007bff; /* Changed color to blue for indicator */
+  border-radius: 50%; /* Rounded indicator */
+  content: "";
+  height: 16px;
+  left: -8px;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.sl-primary {
+  border-left-color: #007bff;
+
+  &:last-child::after {
+    background-color: #007bff;
+  }
+}
+
+.sl-primary::before {
+  background-color: #007bff;
+}
+
+.sl-danger {
+  border-left-color: #dc3545;
+
+  &:last-child::after {
+    background-color: #dc3545;
+  }
+}
+
+.sl-danger::before {
+  background-color: #dc3545;
+}
+
+.sl-success {
+  border-left-color: #28a745;
+
+  &:last-child::after {
+    background-color: #28a745;
+  }
+}
+
+.sl-success::before {
+  background-color: #28a745;
+}
+
+.sl-warning {
+  border-left-color: #ffc107;
+
+  &:last-child::after {
+    background-color: #ffc107;
+  }
+}
+
+.sl-warning::before {
+  background-color: #ffc107;
+}

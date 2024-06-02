@@ -1,0 +1,104 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- fil d'Ariane -->
+      <app-breadcrumb [title]="'Echart'" [items]="['Graphiques']" [active_item]="'Echart'"></app-breadcrumb>
+    </div>
+    <div class="row clearfix">
+      <!-- Graphique en barres avec ligne -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en barres avec ligne</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="line_bar_chart" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Graphique en ligne -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en ligne</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="line_chart" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <!-- Graphique en barres -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en barres</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="bar_chart" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Graphique en ligne Graph -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en ligne Graph</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="graph_line_chart" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <!-- Graphique en secteurs -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en secteurs</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="pie_chart" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Graphique en ligne Aria -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en ligne Aria</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="area_line_chart" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <!-- Graphique en secteurs -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en secteurs</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="pie_chart2" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Graphique en soleil -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Graphique en soleil</h2>
+          </div>
+          <div class="body">
+            <div echarts [options]="sunburst_chart" class="echart-height"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+<div>
+  <h2 mat-dialog-title>Ajouter un utilisateur</h2>
+  <div mat-dialog-content>
+    <form [formGroup]="addCusForm!" (ngSubmit)="onSubmitClick()">
+      <div class="text-inside">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Prénom" value={{fname}} formControlName="firstname" required>
+          <mat-error *ngIf="addCusForm.controls?.['firstname']?.hasError('required')">
+            Veuillez saisir le prénom
+          </mat-error>
+          <mat-error *ngIf="addCusForm.controls?.['firstname']?.hasError('pattern')">
+            Veuillez saisir un prénom valide
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="text-inside">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Nom de famille" value={{lname}} formControlName="lastname" required>
+          <mat-error *ngIf="addCusForm.controls?.['lastname']?.hasError('required')">
+            Veuillez saisir le nom de famille
+          </mat-error>
+          <mat-error *ngIf="addCusForm.controls?.['lastname']?.hasError('pattern')">
+            Veuillez saisir un nom de famille valide
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="text-inside">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Adresse email" formControlName="email" required>
+          <mat-error *ngIf="addCusForm.controls?.['email']?.hasError('required')">
+            Veuillez saisir une adresse email
+          </mat-error>
+          <mat-error *ngIf="addCusForm.controls?.['email']?.hasError('email')">
+            Veuillez saisir une adresse email valide
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="text-inside">
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Adresse"></textarea>
+        </mat-form-field>
+      </div>
+      <div class="btn-sec">
+        <button class="btn-space" mat-raised-button color="primary">Enregistrer</button>
+        <button type="button" mat-button (click)="closeDialog()">Annuler</button>
+      </div>
+    </form>
+  </div>
+</div>

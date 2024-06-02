@@ -1,0 +1,81 @@
+﻿.dropdown-menu {
+  @include border-radius(0);
+  margin-top: -35px !important;
+  margin-left: -15px;
+  -webkit-box-shadow: 0 5px 15px 2px rgba(64, 70, 74, 0.2) !important;
+  box-shadow: 0 5px 15px 2px rgba(64, 70, 74, 0.2) !important;
+  border-radius: 0px;
+  border: none;
+  padding: 0px;
+
+  .divider {
+    margin: 5px 0;
+  }
+
+  .header {
+    font-size: 14px; /* Increased font size for better readability */
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    padding: 10px 0; /* Increased padding for better spacing */
+  }
+
+  .footer {
+    a {
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding: 15px 0; /* Increased padding for better spacing */
+      font-size: 14px; /* Increased font size for better readability */
+      color: #007bff; /* Changed link color to blue */
+      font-weight: 500;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  > li {
+    > a {
+      padding: 10px 18px; /* Increased padding for better spacing */
+      color: #444; /* Adjusted text color for better readability */
+      @include transition(all 0.5s);
+      font-size: 14px;
+      line-height: 25px;
+      display: block;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+      }
+
+      i.material-icons {
+        float: left;
+        margin-right: 7px;
+        margin-top: 2px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+  font-size: 14px; /* Increased font size for better readability */
+  color: #636262; /* Adjusted text color for better readability */
+}
+
+.dropdown-animated {
+  -webkit-animation-duration: 0.3s !important;
+  -moz-animation-duration: 0.3s !important;
+  -o-animation-duration: 0.3s !important;
+  animation-duration: 0.3s !important;
+}
+
+.dropdown-menu.pull-right.show {
+  position: absolute !important;
+  left: auto !important;
+  right: 0 !important;
+  top: 50px !important;
+  transform: none !important;
+}

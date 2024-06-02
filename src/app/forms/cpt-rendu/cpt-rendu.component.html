@@ -1,0 +1,999 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Compte Rendu'" [items]="['Compte Rendu']"></app-breadcrumb>
+    </div>
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Compte Rendu Seance OHB</h2>
+          </div>
+          <div class="body">
+            <div class="row">
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Heure</mat-label>
+                  <span matPrefix>
+                    <mat-icon class="m-2">access_time</mat-icon>
+                  </span>
+                  <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Date</mat-label>
+                  <span matPrefix>
+                    <mat-icon class="m-2">date_range</mat-icon>
+                  </span>
+                  <input matInput placeholder="EX: 10/07/20 11:05:29 " mask="00/00/00 00:00:00" />
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Operateur</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Medecin Hyperbariste</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Infirmier Accompagnateur</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Chambre</mat-label>
+                  <mat-select>
+                    <mat-option value="option1">Chambre n⁰1</mat-option>
+                    <mat-option value="option2">Chambre n⁰2</mat-option> <!-- Utilisation de valeurs différentes -->
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Table Thérapeutique</mat-label>
+                  <mat-select>
+                    <mat-option value="option1">Table n⁰1</mat-option>
+                    <mat-option value="option2">Table n⁰2</mat-option>
+                    <mat-option value="option3">Table n⁰3</mat-option>
+                    <mat-option value="option4">Table n⁰4</mat-option>
+                    <mat-option value="option5">Table n⁰5</mat-option>
+                    <mat-option value="option6">Table n⁰6</mat-option>
+                    <mat-option value="option7">Table n⁰7</mat-option>
+                    <mat-option value="option8">Table n⁰8</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Patient 1-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰1</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- Patient 2-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰2</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- Patient 3-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰3</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>    
+    <!-- Patient 4-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰4</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- Patient 5-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰5</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- Patient 6-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰6</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- Patient 7-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰7</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- Patient 8-->
+    <div class="card">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Identité Patient n⁰8</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="body">
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nom</mat-label>
+                        <input matInput> 
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Choisissez le numéro du Siège</mat-label>
+                        <mat-select>
+                          <mat-option value="option1">Siège n⁰1</mat-option>
+                          <mat-option value="option2">Siège n⁰2</mat-option>
+                          <mat-option value="option3">Siège n⁰3</mat-option>
+                          <mat-option value="option4">Siège n⁰4</mat-option>
+                          <mat-option value="option5">Siège n⁰5</mat-option>
+                          <mat-option value="option6">Siège n⁰6</mat-option>
+                          <mat-option value="option7">Siège n⁰7</mat-option>
+                          <mat-option value="option8">Siège n⁰8</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Dossier</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Numéro Séance</mat-label>
+                        <input matInput> 
+                      </mat-form-field>     
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Indication OHB</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Catégorie</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>
+                      Incident / Accident</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- Champ résérvé à l'accompagnateur-->
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Accompagnateur</h2>
+          </div>
+          <div class="body">
+            <div class="row">
+              <div class="col-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Heure de Sortie</mat-label>
+                  <span matPrefix>
+                    <mat-icon class="m-2">access_time</mat-icon>
+                  </span>
+                  <input matInput placeholder="EX: 23:05:29 " mask="Hh:m0:s0" />
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>GPS</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Intervalle</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Majoration</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="header">
+                <h2>Paliers</h2>
+              </div>
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Profondeur</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Durée</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Oxygène</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tableau 1-->
+    <div class="row">
+      <div class="card">
+        <div class="row clearfix">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+              <div class="body">
+                <div class="row">
+                  <div class="col-sm-12">
+                      <div class="table-responsive mt-4">
+                          <form id="form-table">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Heures</th>
+                                  <th>Départ Surface</th>
+                                  <th>Profondeur en mètre</th>
+                                  <th>Départ Fond</th>
+                                  <th>DT</th>
+                                  <th>Profondeur (Palier)</th>
+                                  <th>Durée (Palier)</th>
+                                  <th>O2/Air (Palier)</th>
+                                  <th>Heures de Sortie</th>
+                                  <th>GPS (Sortie)</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- 8 rows with 10 columns each -->
+                                <tr>
+                                  <td><input type="text" name="row1col1"></td>
+                                  <td><input type="text" name="row1col2"></td>
+                                  <td><input type="text" name="row1col3"></td>
+                                  <td><input type="text" name="row1col4"></td>
+                                  <td><input type="text" name="row1col5"></td>
+                                  <td><input type="text" name="row1col6"></td>
+                                  <td><input type="text" name="row1col7"></td>
+                                  <td><input type="text" name="row1col8"></td>
+                                  <td><input type="text" name="row1col9"></td>
+                                  <td><input type="text" name="row1col10"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row2col1"></td>
+                                  <td><input type="text" name="row2col2"></td>
+                                  <td><input type="text" name="row2col3"></td>
+                                  <td><input type="text" name="row2col4"></td>
+                                  <td><input type="text" name="row2col5"></td>
+                                  <td><input type="text" name="row2col6"></td>
+                                  <td><input type="text" name="row2col7"></td>
+                                  <td><input type="text" name="row2col8"></td>
+                                  <td><input type="text" name="row2col9"></td>
+                                  <td><input type="text" name="row2col10"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row3col1"></td>
+                                  <td><input type="text" name="row3col2"></td>
+                                  <td><input type="text" name="row3col3"></td>
+                                  <td><input type="text" name="row3col4"></td>
+                                  <td><input type="text" name="row3col5"></td>
+                                  <td><input type="text" name="row3col6"></td>
+                                  <td><input type="text" name="row3col7"></td>
+                                  <td><input type="text" name="row3col8"></td>
+                                  <td><input type="text" name="row3col9"></td>
+                                  <td><input type="text" name="row3col10"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row4col1"></td>
+                                  <td><input type="text" name="row4col2"></td>
+                                  <td><input type="text" name="row4col3"></td>
+                                  <td><input type="text" name="row4col4"></td>
+                                  <td><input type="text" name="row4col5"></td>
+                                  <td><input type="text" name="row4col6"></td>
+                                  <td><input type="text" name="row4col7"></td>
+                                  <td><input type="text" name="row4col8"></td>
+                                  <td><input type="text" name="row4col9"></td>
+                                  <td><input type="text" name="row4col10"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row5col1"></td>
+                                  <td><input type="text" name="row5col2"></td>
+                                  <td><input type="text" name="row5col3"></td>
+                                  <td><input type="text" name="row5col4"></td>
+                                  <td><input type="text" name="row5col5"></td>
+                                  <td><input type="text" name="row5col6"></td>
+                                  <td><input type="text" name="row5col7"></td>
+                                  <td><input type="text" name="row5col8"></td>
+                                  <td><input type="text" name="row5col9"></td>
+                                  <td><input type="text" name="row5col10"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row6col1"></td>
+                                  <td><input type="text" name="row6col2"></td>
+                                  <td><input type="text" name="row6col3"></td>
+                                  <td><input type="text" name="row6col4"></td>
+                                  <td><input type="text" name="row6col5"></td>
+                                  <td><input type="text" name="row6col6"></td>
+                                  <td><input type="text" name="row6col7"></td>
+                                  <td><input type="text" name="row6col8"></td>
+                                  <td><input type="text" name="row6col9"></td>
+                                  <td><input type="text" name="row6col10"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row7col1"></td>
+                                  <td><input type="text" name="row7col2"></td>
+                                  <td><input type="text" name="row7col3"></td>
+                                  <td><input type="text" name="row7col4"></td>
+                                  <td><input type="text" name="row7col5"></td>
+                                  <td><input type="text" name="row7col6"></td>
+                                  <td><input type="text" name="row7col7"></td>
+                                  <td><input type="text" name="row7col8"></td>
+                                  <td><input type="text" name="row7col9"></td>
+                                  <td><input type="text" name="row7col10"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row8col1"></td>
+                                  <td><input type="text" name="row8col2"></td>
+                                  <td><input type="text" name="row8col3"></td>
+                                  <td><input type="text" name="row8col4"></td>
+                                  <td><input type="text" name="row8col5"></td>
+                                  <td><input type="text" name="row8col6"></td>
+                                  <td><input type="text" name="row8col7"></td>
+                                  <td><input type="text" name="row8col8"></td>
+                                  <td><input type="text" name="row8col9"></td>
+                                  <td><input type="text" name="row8col10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </form>
+                    
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tableau 2-->
+    <div class="row">
+      <div class="card">
+        <div class="row clearfix">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+              <div class="body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="header">
+                      <h2>Table Thérapeutique</h2>
+                    </div>
+                      <div class="table-responsive mt">
+                          <form id="form-table">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Heures</th>
+                                  <th>Départ Surface</th>
+                                  <th>Profondeur en mètre</th>
+                                  <th>O2</th>
+                                  <th>Air</th>
+                                  <th>Départ Fond</th>
+                                  <th>Heure de Sortie</th>
+                                  <th>Evènements</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- 8 rows with 10 columns each -->
+                                <tr>
+                                  <td><input type="text" name="row1col1"></td>
+                                  <td><input type="text" name="row1col2"></td>
+                                  <td><input type="text" name="row1col3"></td>
+                                  <td><input type="text" name="row1col4"></td>
+                                  <td><input type="text" name="row1col5"></td>
+                                  <td><input type="text" name="row1col6"></td>
+                                  <td><input type="text" name="row1col7"></td>
+                                  <td><input type="text" name="row1col8"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row2col1"></td>
+                                  <td><input type="text" name="row2col2"></td>
+                                  <td><input type="text" name="row2col3"></td>
+                                  <td><input type="text" name="row2col4"></td>
+                                  <td><input type="text" name="row2col5"></td>
+                                  <td><input type="text" name="row2col6"></td>
+                                  <td><input type="text" name="row2col7"></td>
+                                  <td><input type="text" name="row2col8"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row3col1"></td>
+                                  <td><input type="text" name="row3col2"></td>
+                                  <td><input type="text" name="row3col3"></td>
+                                  <td><input type="text" name="row3col4"></td>
+                                  <td><input type="text" name="row3col5"></td>
+                                  <td><input type="text" name="row3col6"></td>
+                                  <td><input type="text" name="row3col7"></td>
+                                  <td><input type="text" name="row3col8"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row4col1"></td>
+                                  <td><input type="text" name="row4col2"></td>
+                                  <td><input type="text" name="row4col3"></td>
+                                  <td><input type="text" name="row4col4"></td>
+                                  <td><input type="text" name="row4col5"></td>
+                                  <td><input type="text" name="row4col6"></td>
+                                  <td><input type="text" name="row4col7"></td>
+                                  <td><input type="text" name="row4col8"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row5col1"></td>
+                                  <td><input type="text" name="row5col2"></td>
+                                  <td><input type="text" name="row5col3"></td>
+                                  <td><input type="text" name="row5col4"></td>
+                                  <td><input type="text" name="row5col5"></td>
+                                  <td><input type="text" name="row5col6"></td>
+                                  <td><input type="text" name="row5col7"></td>
+                                  <td><input type="text" name="row5col8"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row6col1"></td>
+                                  <td><input type="text" name="row6col2"></td>
+                                  <td><input type="text" name="row6col3"></td>
+                                  <td><input type="text" name="row6col4"></td>
+                                  <td><input type="text" name="row6col5"></td>
+                                  <td><input type="text" name="row6col6"></td>
+                                  <td><input type="text" name="row6col7"></td>
+                                  <td><input type="text" name="row6col8"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row7col1"></td>
+                                  <td><input type="text" name="row7col2"></td>
+                                  <td><input type="text" name="row7col3"></td>
+                                  <td><input type="text" name="row7col4"></td>
+                                  <td><input type="text" name="row7col5"></td>
+                                  <td><input type="text" name="row7col6"></td>
+                                  <td><input type="text" name="row7col7"></td>
+                                  <td><input type="text" name="row7col8"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="row8col1"></td>
+                                  <td><input type="text" name="row8col2"></td>
+                                  <td><input type="text" name="row8col3"></td>
+                                  <td><input type="text" name="row8col4"></td>
+                                  <td><input type="text" name="row8col5"></td>
+                                  <td><input type="text" name="row8col6"></td>
+                                  <td><input type="text" name="row8col7"></td>
+                                  <td><input type="text" name="row8col8"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+        <div class="card">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+              <button class="btn-space" mat-raised-button color="primary" type="submit">Enregistrer</button>
+              <button type="button" mat-raised-button color="warn">Annuler</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

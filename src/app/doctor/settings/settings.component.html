@@ -1,0 +1,92 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Paramètres'" [items]="[]"></app-breadcrumb>
+    </div>
+    <div class="card">
+      <div class="header">
+        <h2>
+          <strong>Paramètres</strong> De Sécurité</h2>
+      </div>
+      <div class="body">
+        <div class="example-container">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Nom d'utilisateur</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Mot de Passe Actuel</mat-label>
+            <input matInput type="password">
+          </mat-form-field>
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Nouveau Mot de Passe</mat-label>
+            <input matInput type="password">
+          </mat-form-field>
+        </div>
+        <button mat-raised-button color="primary">Sauvegarder</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">
+        <h2>
+          <strong>Paramètres</strong> Du Compte</h2>
+      </div>
+      <div class="body">
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Prénom</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Nom</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Ville</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Pays</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Adresse</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button mat-raised-button color="primary">Sauvegarder les changements</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

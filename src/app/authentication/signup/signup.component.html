@@ -1,0 +1,87 @@
+<div class="auth-container">
+  <div class="row auth-main">
+    <div class="col-sm-6 px-0 d-none d-sm-block">
+      <div class="left-img" style="background-image: url(assets/images/pages/bg-02.png);">
+      </div>
+    </div>
+    <div class="col-sm-6 auth-form-section">
+      <div class="form-section">
+        <div class="auth-wrapper">
+          <h2 class="welcome-msg"> Inscription </h2>
+          <p class="auth-signup-text text-muted">Entrez les détails pour créer votre compte</p>
+          <form class="validate-form" [formGroup]="authForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Nom d'utilisateur</mat-label>
+                  <input matInput formControlName="username" required>
+                  <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>face</mat-icon>
+                  <mat-error *ngIf="authForm.get('username')!.hasError('required')">
+                    Le nom d'utilisateur est requis
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12col-lg-12 col-md-12 col-sm-12 mb-2">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input matInput formControlName="email" required>
+                  <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>mail</mat-icon>
+                  <mat-error *ngIf="authForm.get('email')!.hasError('required') || authForm.get('email')!.touched">
+                    Veuillez saisir une adresse e-mail valide
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12col-lg-12 col-md-12 col-sm-12 mb-2">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Mot de passe</mat-label>
+                  <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+                  <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix (click)="hide = !hide">
+                    {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  <mat-error *ngIf="authForm.get('password')!.hasError('required')">
+                    Le mot de passe est requis
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12col-lg-12 col-md-12 col-sm-12 mb-2">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Confirmer le mot de passe</mat-label>
+                  <input matInput formControlName="cpassword" [type]="chide ? 'password' : 'text'" required>
+                  <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix (click)="chide = !chide">
+                    {{chide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  <mat-error *ngIf="authForm.get('cpassword')!.hasError('required')">
+                    La confirmation du mot de passe est requise
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="flex-sb-m w-full  p-b-20">
+              <div>
+                <span>Déjà inscrit ? <a routerLink="/authentication/signin">
+                    Connexion
+                  </a></span>
+              </div>
+            </div>
+            <div class="container-auth-form-btn">
+              <button mat-raised-button color="primary" class="auth-form-btn" [disabled]="!authForm.valid "
+                type="submit">
+                S'inscrire
+              </button>
+            </div>
+          </form>
+          <h6 class="social-login-title">OU</h6>
+          <ul class="list-unstyled social-icon mb-0 mt-3">
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
+                <i class="fab fa-google"></i>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

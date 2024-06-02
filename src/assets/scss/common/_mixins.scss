@@ -1,0 +1,62 @@
+// Mixin for border radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Mixin for box shadow
+@mixin box-shadow($shadowinfo) {
+  box-shadow: $shadowinfo;
+}
+
+// Mixin for transform
+@mixin transform($transform) {
+  transform: $transform;
+}
+
+// Mixin for transition
+@mixin transition($transition) {
+  transition: $transition;
+}
+
+// Mixin for three dots overflow
+@mixin three-dots-overflow() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Mixin for navbar link color
+@mixin navbar-link-color($textcolor, $navbarcolor, $opacity) {
+  .navbar-brand,
+  .navbar-brand:hover,
+  .navbar-brand:active,
+  .navbar-brand:focus {
+    color: $textcolor;
+  }
+
+  .nav > li > a:hover,
+  .nav > li > a:focus,
+  .nav .open > a,
+  .nav .open > a:hover,
+  .nav .open > a:focus {
+    background-color: transparentize($navbarcolor, $opacity);
+  }
+
+  .nav > li > a {
+    color: $textcolor;
+  }
+
+  .bars {
+    float: left;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: $textcolor;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: 4px;
+  }
+
+  .bars:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}

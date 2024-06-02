@@ -1,0 +1,183 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Fiche de Consultation'" [items]="['Consultation']"></app-breadcrumb>
+    </div>
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Fiche de Consultation Oxygenotherapie Hyperbare</h2>
+          </div>
+          <div class="body">
+            <div class="example-container">
+              <form [formGroup]="consultationForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Nom</mat-label>
+                      <input matInput formControlName="nom">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Prénom</mat-label>
+                      <input matInput formControlName="prenom">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Age</mat-label>
+                      <input matInput formControlName="age">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Adresse</mat-label>
+                      <input matInput formControlName="adresse">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Tél</mat-label>
+                      <input matInput formControlName="tel">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Médecin Traitant</mat-label>
+                      <input matInput formControlName="medecinTraitant">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Service d'origine</mat-label>
+                      <input matInput formControlName="serviceOrigine">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Hôpital d'origine</mat-label>
+                      <input matInput formControlName="hopitalOrigine">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Nombre de séances prescrites</mat-label>
+                      <input matInput formControlName="nombreSeancesPrescrites">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Date de l'examen</mat-label>
+                      <input matInput [matDatepicker]="picker" formControlName="dateExamen">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Diagnostic</mat-label>
+                  <input matInput formControlName="diagnostic">
+                </mat-form-field>
+                <div class="header">
+                  <h2>Antécédants:</h2>
+                </div>
+                <section class="example-section">
+                  <mat-checkbox class="example-margin" formControlName="tabac">Tabac</mat-checkbox>
+                  <mat-checkbox class="example-margin" formControlName="allergie">Allergie</mat-checkbox>
+                </section>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Médicaux</mat-label>
+                  <textarea matInput formControlName="antecedentsMedicaux"></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Chirurgicaux</mat-label>
+                  <textarea matInput formControlName="antecedentsChirurgicaux"></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Traitement en cours</mat-label>
+                  <textarea matInput formControlName="traitementEnCours"></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Histoire de la maladie</mat-label>
+                  <textarea matInput formControlName="histoireMaladie"></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Examen Clinique</mat-label>
+                  <textarea matInput formControlName="examenClinique"></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Radiographie du Thorax</mat-label>
+                  <textarea matInput formControlName="radiographieThorax"></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>ECG</mat-label>
+                  <textarea matInput formControlName="ecg"></textarea>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Autres</mat-label>
+                  <textarea matInput formControlName="autres"></textarea>
+                </mat-form-field>
+                <div class="header">
+                  <h2>Traitement OHB</h2>
+                </div>
+                <div class="row">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nbre de séances souhaitables</mat-label>
+                    <textarea matInput formControlName="nbreSeancesSouhaitables"></textarea>
+                  </mat-form-field>
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Choisissez une date</mat-label>
+                      <input matInput [matDatepicker]="picker" formControlName="dateSouhaitee">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Protocole</mat-label>
+                    <textarea matInput formControlName="protocole"></textarea>
+                  </mat-form-field>
+                </div>
+                <div class="header">
+                  <h2>Charger un Fichier</h2>
+                </div>
+                <div class="example-container">
+                  <form [formGroup]="fileUploadForm">
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+                        <app-file-upload formControlName="uploadFile"></app-file-upload>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                          <button class="btn-space" mat-raised-button color="primary" type="submit">Soumettre</button>
+                          <button type="button" mat-raised-button color="warn">Annuler</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

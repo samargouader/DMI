@@ -1,0 +1,74 @@
+[
+  {
+    "id": "001",
+    "d_no": "1",
+    "d_name": "Gynécologie",
+    "description": "Le département de gynécologie traite les problèmes liés aux voies urinaires féminines et aux organes reproducteurs, tels que l'endométriose, l'infertilité et l'incontinence.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Dr. Amira Ben Ali",
+    "status": "Actif"
+  },
+  {
+    "id": "002",
+    "d_no": "2",
+    "d_name": "Gastro-entérologie",
+    "description": "Ce département traite les maladies digestives et gastro-intestinales supérieures et inférieures.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Dr. Hichem Ben Mahmoud",
+    "status": "Actif"
+  },
+  {
+    "id": "003",
+    "d_no": "3",
+    "d_name": "Néphrologie",
+    "description": "Le département de néphrologie surveille et évalue les patients présentant divers problèmes et affections rénaux.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Dr. Fatma Khelifi",
+    "status": "Actif"
+  },
+  {
+    "id": "004",
+    "d_no": "4",
+    "d_name": "Cardiologie",
+    "description": "Le département de cardiologie fournit des soins médicaux aux patients ayant des problèmes cardiaques ou circulatoires.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Dr. Mohamed Ben Salem",
+    "status": "Inactif"
+  },
+  {
+    "id": "005",
+    "d_no": "5",
+    "d_name": "Pharmacie",
+    "description": "Responsable des médicaments dans un hôpital, y compris l'achat, la fourniture et la distribution.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Dr. Yasmine Ben Amor",
+    "status": "Actif"
+  },
+  {
+    "id": "006",
+    "d_no": "6",
+    "d_name": "Physiothérapie",
+    "description": "Les physiothérapeutes travaillent à travers des thérapies physiques telles que l'exercice, le massage et la manipulation des os, des articulations et des tissus musculaires.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Dr. Mohamed Ben Jemaa",
+    "status": "Actif"
+  },
+  {
+    "id": "007",
+    "d_no": "7",
+    "d_name": "Orthopédie",
+    "description": "Traite les conditions liées au système musculo-squelettique, y compris les articulations, les ligaments, les os, les muscles, les tendons et les nerfs.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Dr. Amina Ben Salah",
+    "status": "Inactif"
+  },
+  {
+    "id": "008",
+    "d_no": "8",
+    "d_name": "Ressources Humaines",
+    "description": "Le rôle est de fournir un service professionnel, efficace et axé sur le client aux managers et au personnel, et à son tour faciliter la prestation d'un service professionnel, efficace et axé sur le client aux patients.",
+    "d_date": "2021-02-25T14:22:18Z",
+    "d_head": "Mohamed Ben Nasr",
+    "status": "Actif"
+  }
+]

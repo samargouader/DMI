@@ -1,0 +1,143 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Paramètres'" [items]="[]" [active_item]="'Paramètres'"></app-breadcrumb>
+    </div>
+    <div class="card">
+      <div class="header">
+        <h2>
+          <strong>Paramètres</strong> de Sécurité</h2>
+      </div>
+      <div class="body">
+        <div class="example-container">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Nom d'utilisateur</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Mot de passe actuel</mat-label>
+            <input matInput type="password">
+          </mat-form-field>
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Nouveau mot de passe</mat-label>
+            <input matInput type="password">
+          </mat-form-field>
+        </div>
+        <button mat-raised-button color="primary">Enregistrer</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">
+        <h2>
+          <strong>Paramètres</strong> du Compte</h2>
+      </div>
+      <div class="body">
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Prénom</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Nom</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Ville</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Pays</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Date de naissance</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Téléphone mobile</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Groupe sanguin</mat-label>
+                <mat-select>
+                  <mat-option [value]="'A-'">
+                    A-
+                  </mat-option>
+                  <mat-option [value]="'A+'">
+                    A+
+                  </mat-option>
+                  <mat-option [value]="'B-'">
+                    B-
+                  </mat-option>
+                  <mat-option [value]="'B+'">
+                    B+
+                  </mat-option>
+                  <mat-option [value]="'AB-'">
+                    AB-
+                  </mat-option>
+                  <mat-option [value]="'AB+'">
+                    AB+
+                  </mat-option>
+                  <mat-option [value]="'O-'">
+                    O-
+                  </mat-option>
+                  <mat-option [value]="'O+'">
+                    O+
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <mat-form-field class="example-full-width mb-3" appearance="outline">
+                <mat-label>Adresse</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button mat-raised-button color="primary">Enregistrer les modifications</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,121 @@
+<div class="addContainer">
+  <div class="modalHeader">
+    <div class="editRowModal">
+      <div class="modalHeader clearfix">
+        <img [src]='billList.img' alt="avatar">
+        <div class="modal-about">
+          {{dialogTitle}}
+        </div>
+      </div>
+    </div>
+    <button mat-icon-button (click)="dialogRef.close()" class="modal-close-button" aria-label="Fermer la boîte de dialogue">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <div mat-dialog-content>
+    <form class="register-form m-4" [formGroup]="billListForm" (ngSubmit)="submit">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Nom du patient</mat-label>
+            <input matInput formControlName="pName" required>
+            <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>face</mat-icon>
+            <mat-error *ngIf="billListForm.get('pName')?.hasError('required')">
+              Le nom du patient est requis
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Identifiant d'admission</mat-label>
+            <input matInput formControlName="admissionID" required>
+            <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>tag</mat-icon>
+            <mat-error *ngIf="billListForm.get('admissionID')?.hasError('required')">
+              L'identifiant d'admission est requis
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Nom du médecin</mat-label>
+            <input matInput formControlName="dName" required>
+            <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>perm_identity</mat-icon>
+            <mat-error *ngIf="billListForm.get('dName')?.hasError('required')">
+              Le nom du médecin est requis
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Statut</mat-label>
+            <mat-select formControlName="status" required>
+              <mat-option [value]="'Paid'">
+                Payé
+              </mat-option>
+              <mat-option [value]="'Unpaid'">
+                Impayé
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="billListForm.get('status')?.hasError('required')">
+              Le statut est requis
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="billListForm.get('date')?.hasError('required')">
+              Veuillez sélectionner une date
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Taxe</mat-label>
+            <input matInput formControlName="tax">
+            <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>description</mat-icon>
+            <mat-error *ngIf="billListForm.get('tax')?.hasError('required')">
+              La taxe est requise
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Remise</mat-label>
+            <input matInput formControlName="discount">
+            <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>local_activity</mat-icon>
+            <mat-error *ngIf="billListForm.get('discount')?.hasError('required')">
+              La remise est requise
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Total</mat-label>
+            <input matInput formControlName="total">
+            <mat-icon class="material-icons-two-tone color-icon p-3" matSuffix>receipt</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+          <div class="example-button-row">
+            <button mat-raised-button color="primary" [disabled]="!billListForm.valid" [mat-dialog-close]="1"
+              (click)="confirmAdd()">Enregistrer</button>
+            <button mat-raised-button color="warn" (click)="onNoClick()" tabindex="-1">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

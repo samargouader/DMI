@@ -1,0 +1,178 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Ajouter une facture'" [items]="['Facturation']" [active_item]="'Ajouter une facture'"></app-breadcrumb>
+    </div>
+    <div class="row clearfix">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2><strong>Ajouter une facture</strong></h2>
+          </div>
+          <div class="body">
+            <form class="m-4" [formGroup]="billForm" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Numéro de facture</mat-label>
+                    <input matInput formControlName="bNo" required>
+                    <mat-error *ngIf="billForm.get('bNo')?.hasError('required')">
+                      Le numéro de facture est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>ID d'admission</mat-label>
+                    <input matInput formControlName="admissionID" required>
+                    <mat-error *ngIf="billForm.get('admissionID')?.hasError('required')">
+                      L'ID d'admission est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Nom du patient</mat-label>
+                    <input matInput formControlName="pName" required>
+                    <mat-error *ngIf="billForm.get('pName')?.hasError('required')">
+                      Le nom du patient est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Nom du médecin</mat-label>
+                    <mat-select formControlName="dName" required>
+                      <mat-option [value]="'1'">
+                        Dr. John Deo
+                      </mat-option>
+                      <mat-option [value]="'2'">
+                        Dr. Rajesh
+                      </mat-option>
+                      <mat-option [value]="'3'">
+                        Dr. Megha Trivedi
+                      </mat-option>
+                      <mat-option [value]="'4'">
+                        Dr. Smith
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="billForm.get('dName')?.hasError('required')">
+                      Le nom du médecin est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Date d'admission</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="aDate" required>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error *ngIf="billForm.get('aDate')?.hasError('required')">
+                      Veuillez sélectionner une date
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Date de sortie</mat-label>
+                    <input matInput [matDatepicker]="picker1" formControlName="dDate" required>
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                    <mat-error *ngIf="billForm.get('dDate')?.hasError('required')">
+                      Veuillez sélectionner une date
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Réduction</mat-label>
+                    <input matInput formControlName="discount">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Montant total</mat-label>
+                    <input matInput formControlName="total">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Méthode de paiement</mat-label>
+                    <mat-select formControlName="pMethod" required>
+                      <mat-option [value]="'1'">
+                        Espèces
+                      </mat-option>
+                      <mat-option [value]="'2'">
+                        Chèque
+                      </mat-option>
+                      <mat-option [value]="'3'">
+                        Carte de crédit
+                      </mat-option>
+                      <mat-option [value]="'4'">
+                        Carte de débit
+                      </mat-option>
+                      <mat-option [value]="'5'">
+                        Net Banking
+                      </mat-option>
+                      <mat-option [value]="'6'">
+                        Assurance
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="billForm.get('pMethod')?.hasError('required')">
+                      La méthode de paiement est requise
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width mb-3" appearance="outline">
+                    <mat-label>Statut de paiement</mat-label>
+                    <mat-select formControlName="pStatus" required>
+                      <mat-option [value]="'Paid'">
+                        Payé
+                      </mat-option>
+                      <mat-option [value]="'Unpaid'">
+                        Impayé
+                      </mat-option>
+                      <mat-option [value]="'Partial'">
+                        Partiel
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="billForm.get('pStatus')?.hasError('required')">
+                      Le statut de paiement est requis
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <button class="btn-space" mat-raised-button color="primary"
+                    [disabled]="!billForm.valid">Soumettre</button>
+                  <button type="button" mat-raised-button color="warn">Annuler</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

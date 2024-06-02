@@ -1,0 +1,48 @@
+/* Grid container for contact information */
+.contact-grid {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header section of the profile */
+.profile-header {
+  min-height: 150px;
+  color: #434651; /* Updated color for better readability */
+}
+
+/* User name */
+.user-name {
+  padding: 3px;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 10px;
+  color: #ffffff; /* Updated color for better readability */
+}
+
+.name-center{
+  color:#ffffff;
+}
+
+/* User profile image */
+.user-img {
+  padding: 3px;
+  border-radius: 50%;
+  max-width: 112px;
+  margin-top: -70px;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* User profile action buttons */
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Phone icon in the contact grid */
+.contact-grid .phone .material-icons {
+  font-size: 16px;
+  padding: 4px 7px 40px 0px;
+  color: #434651; /* Updated color for better readability */
+}

@@ -1,0 +1,62 @@
+﻿/* Define the spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the spin animation to different browsers */
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the spin animation to an element */
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+/* Define colors suitable for a hospital website */
+body {
+  background-color: #f0f0f0; /* Light gray */
+  color: #333; /* Dark gray for text */
+}
+
+h1, h2, h3 {
+  color: #007bff; /* Blue for headings */
+}
+
+a {
+  color: #007bff; /* Blue for links */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue for hovered links */
+}
+
+/* Additional styles for specific elements can be added as needed */

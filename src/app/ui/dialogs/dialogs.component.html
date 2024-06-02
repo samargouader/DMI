@@ -1,0 +1,74 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Dialogues'" [items]="['UI']" [active_item]="'Dialogues'"></app-breadcrumb>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              <strong>Exemples</strong>
+            </h2>
+
+          </div>
+          <div class="body">
+            <div class="row clearfix js-sweetalert">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Un message de base</p>
+                <button mat-raised-button color="primary" (click)="showBasicMessage()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Un titre avec un texte en dessous</p>
+                <button mat-raised-button color="primary" (click)="showWithTitleMessage()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Une boîte de dialogue avec un titre, une icône d'erreur, un texte et un pied de page</p>
+                <button mat-raised-button color="primary" (click)="showTitleErorIcon()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Une fenêtre modale avec un contenu long à l'intérieur :</p>
+                <button mat-raised-button color="primary" (click)="showLongContent()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Description HTML personnalisée et boutons avec libellés ARIA</p>
+                <button mat-raised-button color="primary" (click)="showCustomHtml()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Une boîte de dialogue positionnée personnalisée</p>
+                <button mat-raised-button color="primary" (click)="showCustomPosition()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Une boîte de dialogue de confirmation, avec une fonction attachée au bouton "Confirmer"...</p>
+                <button mat-raised-button color="primary" (click)="customWithFunction()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>En passant un paramètre, vous pouvez exécuter autre chose pour "Annuler".</p>
+                <button mat-raised-button color="primary" (click)="passParameter()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Support de la droite vers la gauche pour l'arabe, le persan, l'hébreu et d'autres langues RTL</p>
+                <button mat-raised-button color="primary" (click)="rtlSupport()">CLIQUEZ
+                  MOI</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p>Exemple de requête AJAX</p>
+                <button mat-raised-button color="primary" (click)="ajaxRequest()">CLIQUEZ
+                  MOI</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

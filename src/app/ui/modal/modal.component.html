@@ -1,0 +1,38 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Modals'" [items]="['UI']" [active_item]="'Modals'"></app-breadcrumb>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Boîte de dialogue simple</h2>
+          </div>
+          <div class="body">
+            <h6>Dialogue simple avec un bouton d'action</h6>
+            <br>
+            <button mat-raised-button color="primary" (click)="dialog()">Cliquez ici pour ouvrir la boîte de dialogue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="header">
+            <h2>Boîte de dialogue avec formulaire</h2>
+          </div>
+          <div class="body">
+            <div>
+              <h6>Exemple de boîte de dialogue avec formulaire</h6>
+              <br>
+              <button mat-raised-button color="primary" (click)="openDialog()">Cliquez ici</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
