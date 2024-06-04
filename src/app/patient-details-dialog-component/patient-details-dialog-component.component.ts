@@ -44,7 +44,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
         </div>
       </ng-container>
       <div *ngIf="!data" class="no-data-message">
-        Pas de Données
+        No data available
       </div>
     </div>
   `,
