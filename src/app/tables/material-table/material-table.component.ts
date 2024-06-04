@@ -22,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     no: 2,
-    name: 'Sarah Smith',
+    name: 'Sarah Ayadi',
     gender: 'female',
     email: 'test@example.com',
     address: '9003 Lake Street Hinesville',
@@ -49,7 +49,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     no: 5,
-    name: 'Ashton Smith',
+    name: 'Slim Ayadi',
     gender: 'female',
     email: 'test@example.com',
     address: '620 East Ave. Dundalk',

@@ -14,7 +14,7 @@ export const ROUTES: RouteInfo[] = [
   },
 
   // Admin Modules
-  {
+  /*{
     path: '',
     title: 'MENUITEMS.APPOINTMENTS.TEXT',
     iconType: 'material-icons-two-tone',
@@ -38,10 +38,10 @@ export const ROUTES: RouteInfo[] = [
         submenu: [],
       },
     ],
-  },
+  },*/
   {
     path: '',
-    title: 'MENUITEMS.DOCTORS.TEXT',
+    title: 'Liste des Comptes Utilisateurs',
     iconType: 'material-icons-two-tone',
     icon: 'supervised_user_circle',
     class: 'menu-toggle',
@@ -90,7 +90,7 @@ export const ROUTES: RouteInfo[] = [
       },
     ],
   },
-  {
+  /*{
     path: '',
     title: 'MENUITEMS.PATIENTS.TEXT',
     iconType: 'material-icons-two-tone',
@@ -114,8 +114,8 @@ export const ROUTES: RouteInfo[] = [
         submenu: [],
       },
     ],
-  },  
-  {
+  },  */
+  /*{
     path: '',
     title: 'MENUITEMS.BILLING.TEXT',
     iconType: 'material-icons-two-tone',
@@ -139,8 +139,8 @@ export const ROUTES: RouteInfo[] = [
         submenu: [],
       },
     ],
-  },
-  {
+  },*/
+  /*{
     path: '',
     title: 'MENUITEMS.DEPARTMENTS.TEXT',
     iconType: 'material-icons-two-tone',
@@ -164,7 +164,7 @@ export const ROUTES: RouteInfo[] = [
         submenu: [],
       },
     ],
-  },
+  },*/
 
   // Doctor Modules
   {
@@ -325,7 +325,7 @@ export const ROUTES: RouteInfo[] = [
     role: ['Doctor'],
     submenu: [],
   },
-  {
+  /*{
     path: '/doctor/doctors',
     title: 'MENUITEMS.DOCTOR.DOCTORS',
     iconType: 'material-icons-two-tone',
@@ -336,10 +336,10 @@ export const ROUTES: RouteInfo[] = [
     badgeClass: '',
     role: ['Doctor'],
     submenu: [],
-  },
+  },*/
   {
     path: '',
-    title: 'Table Thérapeutique',
+    title: 'Tables Thérapeutiques',
     iconType: 'material-icons-two-tone',
     icon: 'view_list',
     class: 'menu-toggle',
@@ -398,7 +398,7 @@ export const ROUTES: RouteInfo[] = [
       },
     ],
   },
-  {
+  /*{
     path: '/doctor/settings',
     title: 'MENUITEMS.DOCTOR.SETTINGS',
     iconType: 'material-icons-two-tone',
@@ -409,11 +409,11 @@ export const ROUTES: RouteInfo[] = [
     badgeClass: '',
     role: ['Doctor'],
     submenu: [],
-  },
+  },*/
 
 
   // Common Modules
-  {
+  /*{
     path: '',
     title: 'Applications',
     iconType: '',
@@ -424,8 +424,8 @@ export const ROUTES: RouteInfo[] = [
     badgeClass: '',
     role: ['Admin'],
     submenu: [],
-  },
-  {
+  },*/
+  /*{
     path: '',
     title: "Plus d'applications",
     iconType: 'material-icons-two-tone',
@@ -449,8 +449,8 @@ export const ROUTES: RouteInfo[] = [
         submenu: [],
       },
     ],
-  },
-  {
+  },*/
+  /*{
     path: '',
     title: 'Composantes',
     iconType: '',
@@ -461,5 +461,5 @@ export const ROUTES: RouteInfo[] = [
     badgeClass: '',
     role: ['Admin'],
     submenu: [],
-  },
+  },*/
 ];
