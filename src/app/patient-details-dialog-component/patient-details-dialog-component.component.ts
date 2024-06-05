@@ -34,7 +34,6 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
                   <p><strong>ECG:</strong> {{ patient.ecg }}</p>
                   <p><strong>Autres:</strong> {{ patient.autres }}</p>
                   <p><strong>Nombre de séances souhaitables:</strong> {{ patient.nbreSeancesSouhaitables }}</p>
-                  <p><strong>Date souhaitée:</strong> {{ patient.dateSouhaitee | date: 'dd/MM/yyyy' }}</p>
                   <p><strong>Protocole:</strong> {{ patient.protocole }}</p>
                 </div>
               </div>

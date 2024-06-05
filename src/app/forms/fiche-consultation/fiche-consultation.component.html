@@ -136,14 +136,6 @@
                     <mat-label>Nbre de séances souhaitables</mat-label>
                     <textarea matInput formControlName="nbreSeancesSouhaitables"></textarea>
                   </mat-form-field>
-                  <div class="col-6">
-                    <mat-form-field class="example-full-width">
-                      <mat-label>Choisissez une date</mat-label>
-                      <input matInput [matDatepicker]="picker" formControlName="dateSouhaitee">
-                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                      <mat-datepicker #picker></mat-datepicker>
-                    </mat-form-field>
-                  </div>
                   <mat-form-field class="example-full-width" appearance="fill">
                     <mat-label>Protocole</mat-label>
                     <textarea matInput formControlName="protocole"></textarea>
