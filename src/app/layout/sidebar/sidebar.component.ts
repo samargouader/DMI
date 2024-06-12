@@ -86,6 +86,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
         this.userType = Role.Admin;
       }else if (userRole === Role.Doctor) {
         this.userType = Role.Doctor;
+      }else if (userRole === Role.Patient) {
+        this.userType = Role.Patient; 
       } else {
         this.userType = Role.Admin;
       }

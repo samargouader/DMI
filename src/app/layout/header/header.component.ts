@@ -123,6 +123,8 @@ export class HeaderComponent
       this.homePage = 'admin/appointment/viewAppointment';
     } else if (userRole === 'Doctor') {
       this.homePage = 'doctor/appointments';
+    } else if (userRole === 'Patient') {
+      this.homePage = 'doctor/appointments';  
     } else {
       this.homePage = 'admin/appointment/viewAppointment';
     }

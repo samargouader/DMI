@@ -169,7 +169,7 @@ export const ROUTES: RouteInfo[] = [
   // Doctor Modules
   {
     path: '/doctor/patients',
-    title: 'MENUITEMS.DOCTOR.PATIENTS',
+    title: 'Dossier Médicaux',
     iconType: 'material-icons-two-tone',
     icon: 'face',
     class: '',
@@ -188,7 +188,7 @@ export const ROUTES: RouteInfo[] = [
     groupTitle: false,
     badge: '',
     badgeClass: '',
-    role: ['Doctor'],
+    role: ['Doctor','Patient'],
     submenu: [
       {
         path: '/forms/fiche-consultation',
@@ -199,10 +199,10 @@ export const ROUTES: RouteInfo[] = [
         groupTitle: false,
         badge: '',
         badgeClass: '',
-        role: [''],
+        role: ['Doctor'],
         submenu: [],
       },
-      {
+      /*{
         path: '/forms/cpt-rendu',
         title: 'Compte Rendu Seance OHB',
         iconType: '',
@@ -211,7 +211,7 @@ export const ROUTES: RouteInfo[] = [
         groupTitle: false,
         badge: '',
         badgeClass: '',
-        role: [''],
+        role: ['Doctor'],
         submenu: [],
       },
       {
@@ -223,9 +223,9 @@ export const ROUTES: RouteInfo[] = [
         groupTitle: false,
         badge: '',
         badgeClass: '',
-        role: [''],
+        role: ['Doctor'],
         submenu: [],
-      },
+      },*/
     ],
   },
   {
@@ -322,7 +322,7 @@ export const ROUTES: RouteInfo[] = [
     groupTitle: false,
     badge: '',
     badgeClass: '',
-    role: ['Doctor'],
+    role: ['Doctor','Patient'],
     submenu: [],
   },
   /*{

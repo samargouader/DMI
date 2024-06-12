@@ -38,7 +38,7 @@ const routes: Routes = [
           role: Role.Patient,
         },
         loadChildren: () =>
-          import('./patient/patient.module').then((m) => m.PatientModule),
+          import('./doctor/doctor.module').then((m) => m.DoctorModule),
       },
       {
         path: 'task',

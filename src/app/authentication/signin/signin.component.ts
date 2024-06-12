@@ -48,8 +48,8 @@ export class SigninComponent
     this.authForm.get('password')?.setValue('doctor@123');
   }
   patientSet() {
-    this.authForm.get('username')?.setValue('patient@hospital.org');
-    this.authForm.get('password')?.setValue('patient@123');
+    this.authForm.get('username')?.setValue('staff@hospital.org');
+    this.authForm.get('password')?.setValue('staff@123');
   }
   onSubmit() {
     this.submitted = true;
@@ -70,6 +70,8 @@ export class SigninComponent
                   this.router.navigate(['/admin/appointment/viewAppointment']);
                 } else if (role === Role.Doctor) {
                   this.router.navigate(['/doctor/appointments']);
+                } else if (role === Role.Patient) {
+                  this.router.navigate(['/doctor/appointments']);  
                 } else {
                   this.router.navigate(['/authentication/signin']);
                 }

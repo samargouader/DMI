@@ -7,13 +7,16 @@
     <div class="col-sm-6 auth-form-section">
       <div class="form-section">
         <div class="auth-wrapper">
-          
+          <h2 class="welcome-msg"> Bienvenue au Centre de Médecine Hyperbare </h2>
           <div class="d-flex justify-content-between lbl-alert mb-3">
             <div>
               <button mat-raised-button color="primary" type="button" (click)="adminSet();">Administrateur</button>
             </div>
             <div>
-              <button mat-raised-button color="accent" type="button" (click)="doctorSet();">Personnel Médical</button>
+              <button mat-raised-button color="accent" type="button" (click)="doctorSet();">Médecin</button>
+            </div>
+            <div>
+              <button mat-raised-button color="warn" type="button" (click)="patientSet();">Personnel Médical</button>
             </div>
           </div>
           <h2 class="login-title">Se connecter</h2>
